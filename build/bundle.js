@@ -74,23 +74,23 @@
 
 	var _prodindex2 = _interopRequireDefault(_prodindex);
 
-	var _productitems = __webpack_require__(232);
+	var _productitems = __webpack_require__(239);
 
 	var _productitems2 = _interopRequireDefault(_productitems);
 
-	var _item = __webpack_require__(233);
+	var _item = __webpack_require__(240);
 
 	var _item2 = _interopRequireDefault(_item);
 
-	var _about = __webpack_require__(234);
+	var _about = __webpack_require__(241);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _contact = __webpack_require__(235);
+	var _contact = __webpack_require__(242);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
-	__webpack_require__(236);
+	__webpack_require__(243);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26928,6 +26928,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactAddonsCssTransitionGroup = __webpack_require__(232);
+
+	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var ProdIndex = _react2.default.createClass({
@@ -26938,19 +26942,72 @@
 	      'section',
 	      null,
 	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, porro.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, autem culpa dicta dolores doloribus eaque eveniet iste laborum magnam modi natus omnis optio repudiandae, saepe sequi sint velit, voluptates.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquid aperiam asperiores delectus dolorem doloribus earum, ex expedita harum ipsam iure iusto laborum molestiae mollitia nulla odio omnis optio pariatur placeat quam quibusdam quos ratione repellat repellendus rerum sunt temporibus, ullam vero vitae. Accusantium asperiores consequatur, dicta, dignissimos earum et excepturi explicabo, harum id ipsum iste labore maxime modi obcaecati quaerat quam qui quo sit vel vero! Ab at atque, commodi consequatur culpa eaque, explicabo hic inventore iste laboriosam molestiae perspiciatis quasi quo sed, unde. Animi eaque esse exercitationem laudantium nemo reprehenderit? Deserunt, doloremque minima nemo sapiente soluta suscipit!'
+	        _reactAddonsCssTransitionGroup2.default,
+	        {
+	          transitionName: 'example',
+	          transitionEnterTimeout: 700,
+	          transitionLeaveTimeout: 700,
+	          transitionAppear: true,
+	          transitionAppearTimeout: 500 },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, porro.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam, autem culpa dicta dolores doloribus eaque eveniet iste laborum magnam modi natus omnis optio repudiandae, saepe sequi sint velit, voluptates.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquid aperiam asperiores delectus dolorem doloribus earum, ex expedita harum ipsam iure iusto laborum molestiae mollitia nulla odio omnis optio pariatur placeat quam quibusdam quos ratione repellat repellendus rerum sunt temporibus, ullam vero vitae. Accusantium asperiores consequatur, dicta, dignissimos earum et excepturi explicabo, harum id ipsum iste labore maxime modi obcaecati quaerat quam qui quo sit vel vero! Ab at atque, commodi consequatur culpa eaque, explicabo hic inventore iste laboriosam molestiae perspiciatis quasi quo sed, unde. Animi eaque esse exercitationem laudantium nemo reprehenderit? Deserunt, doloremque minima nemo sapiente soluta suscipit!'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'prod-advantages' },
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { src: 'build/logo-vector-01.png', alt: 'Smart things' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Smart things'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { src: 'build/logo-vector-02.png', alt: 'Modern technology' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Modern technology'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { src: 'build/logo-vector-03.png', alt: 'Available price' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Available price'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { src: 'build/logo-vector-04.png', alt: 'Fulltime support' }),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Fulltime support'
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }
@@ -26962,6 +27019,842 @@
 
 /***/ },
 /* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(233);
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactCSSTransitionGroup
+	 */
+
+	'use strict';
+
+	var _assign = __webpack_require__(4);
+
+	var React = __webpack_require__(2);
+
+	var ReactTransitionGroup = __webpack_require__(234);
+	var ReactCSSTransitionGroupChild = __webpack_require__(236);
+
+	function createTransitionTimeoutPropValidator(transitionType) {
+	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
+	  var enabledPropName = 'transition' + transitionType;
+
+	  return function (props) {
+	    // If the transition is enabled
+	    if (props[enabledPropName]) {
+	      // If no timeout duration is provided
+	      if (props[timeoutPropName] == null) {
+	        return new Error(timeoutPropName + ' wasn\'t supplied to ReactCSSTransitionGroup: ' + 'this can cause unreliable animations and won\'t be supported in ' + 'a future version of React. See ' + 'https://fb.me/react-animation-transition-group-timeout for more ' + 'information.');
+
+	        // If the duration isn't a number
+	      } else if (typeof props[timeoutPropName] !== 'number') {
+	          return new Error(timeoutPropName + ' must be a number (in milliseconds)');
+	        }
+	    }
+	  };
+	}
+
+	/**
+	 * An easy way to perform CSS transitions and animations when a React component
+	 * enters or leaves the DOM.
+	 * See https://facebook.github.io/react/docs/animation.html#high-level-api-reactcsstransitiongroup
+	 */
+	var ReactCSSTransitionGroup = React.createClass({
+	  displayName: 'ReactCSSTransitionGroup',
+
+	  propTypes: {
+	    transitionName: ReactCSSTransitionGroupChild.propTypes.name,
+
+	    transitionAppear: React.PropTypes.bool,
+	    transitionEnter: React.PropTypes.bool,
+	    transitionLeave: React.PropTypes.bool,
+	    transitionAppearTimeout: createTransitionTimeoutPropValidator('Appear'),
+	    transitionEnterTimeout: createTransitionTimeoutPropValidator('Enter'),
+	    transitionLeaveTimeout: createTransitionTimeoutPropValidator('Leave')
+	  },
+
+	  getDefaultProps: function () {
+	    return {
+	      transitionAppear: false,
+	      transitionEnter: true,
+	      transitionLeave: true
+	    };
+	  },
+
+	  _wrapChild: function (child) {
+	    // We need to provide this childFactory so that
+	    // ReactCSSTransitionGroupChild can receive updates to name, enter, and
+	    // leave while it is leaving.
+	    return React.createElement(ReactCSSTransitionGroupChild, {
+	      name: this.props.transitionName,
+	      appear: this.props.transitionAppear,
+	      enter: this.props.transitionEnter,
+	      leave: this.props.transitionLeave,
+	      appearTimeout: this.props.transitionAppearTimeout,
+	      enterTimeout: this.props.transitionEnterTimeout,
+	      leaveTimeout: this.props.transitionLeaveTimeout
+	    }, child);
+	  },
+
+	  render: function () {
+	    return React.createElement(ReactTransitionGroup, _assign({}, this.props, { childFactory: this._wrapChild }));
+	  }
+	});
+
+	module.exports = ReactCSSTransitionGroup;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactTransitionGroup
+	 */
+
+	'use strict';
+
+	var _assign = __webpack_require__(4);
+
+	var React = __webpack_require__(2);
+	var ReactInstanceMap = __webpack_require__(119);
+	var ReactTransitionChildMapping = __webpack_require__(235);
+
+	var emptyFunction = __webpack_require__(12);
+
+	/**
+	 * A basis for animations. When children are declaratively added or removed,
+	 * special lifecycle hooks are called.
+	 * See https://facebook.github.io/react/docs/animation.html#low-level-api-reacttransitiongroup
+	 */
+	var ReactTransitionGroup = React.createClass({
+	  displayName: 'ReactTransitionGroup',
+
+	  propTypes: {
+	    component: React.PropTypes.any,
+	    childFactory: React.PropTypes.func
+	  },
+
+	  getDefaultProps: function () {
+	    return {
+	      component: 'span',
+	      childFactory: emptyFunction.thatReturnsArgument
+	    };
+	  },
+
+	  getInitialState: function () {
+	    return {
+	      // TODO: can we get useful debug information to show at this point?
+	      children: ReactTransitionChildMapping.getChildMapping(this.props.children)
+	    };
+	  },
+
+	  componentWillMount: function () {
+	    this.currentlyTransitioningKeys = {};
+	    this.keysToEnter = [];
+	    this.keysToLeave = [];
+	  },
+
+	  componentDidMount: function () {
+	    var initialChildMapping = this.state.children;
+	    for (var key in initialChildMapping) {
+	      if (initialChildMapping[key]) {
+	        this.performAppear(key);
+	      }
+	    }
+	  },
+
+	  componentWillReceiveProps: function (nextProps) {
+	    var nextChildMapping;
+	    if (process.env.NODE_ENV !== 'production') {
+	      nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children, ReactInstanceMap.get(this)._debugID);
+	    } else {
+	      nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children);
+	    }
+	    var prevChildMapping = this.state.children;
+
+	    this.setState({
+	      children: ReactTransitionChildMapping.mergeChildMappings(prevChildMapping, nextChildMapping)
+	    });
+
+	    var key;
+
+	    for (key in nextChildMapping) {
+	      var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
+	      if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
+	        this.keysToEnter.push(key);
+	      }
+	    }
+
+	    for (key in prevChildMapping) {
+	      var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(key);
+	      if (prevChildMapping[key] && !hasNext && !this.currentlyTransitioningKeys[key]) {
+	        this.keysToLeave.push(key);
+	      }
+	    }
+
+	    // If we want to someday check for reordering, we could do it here.
+	  },
+
+	  componentDidUpdate: function () {
+	    var keysToEnter = this.keysToEnter;
+	    this.keysToEnter = [];
+	    keysToEnter.forEach(this.performEnter);
+
+	    var keysToLeave = this.keysToLeave;
+	    this.keysToLeave = [];
+	    keysToLeave.forEach(this.performLeave);
+	  },
+
+	  performAppear: function (key) {
+	    this.currentlyTransitioningKeys[key] = true;
+
+	    var component = this.refs[key];
+
+	    if (component.componentWillAppear) {
+	      component.componentWillAppear(this._handleDoneAppearing.bind(this, key));
+	    } else {
+	      this._handleDoneAppearing(key);
+	    }
+	  },
+
+	  _handleDoneAppearing: function (key) {
+	    var component = this.refs[key];
+	    if (component.componentDidAppear) {
+	      component.componentDidAppear();
+	    }
+
+	    delete this.currentlyTransitioningKeys[key];
+
+	    var currentChildMapping;
+	    if (process.env.NODE_ENV !== 'production') {
+	      currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children, ReactInstanceMap.get(this)._debugID);
+	    } else {
+	      currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+	    }
+
+	    if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	      // This was removed before it had fully appeared. Remove it.
+	      this.performLeave(key);
+	    }
+	  },
+
+	  performEnter: function (key) {
+	    this.currentlyTransitioningKeys[key] = true;
+
+	    var component = this.refs[key];
+
+	    if (component.componentWillEnter) {
+	      component.componentWillEnter(this._handleDoneEntering.bind(this, key));
+	    } else {
+	      this._handleDoneEntering(key);
+	    }
+	  },
+
+	  _handleDoneEntering: function (key) {
+	    var component = this.refs[key];
+	    if (component.componentDidEnter) {
+	      component.componentDidEnter();
+	    }
+
+	    delete this.currentlyTransitioningKeys[key];
+
+	    var currentChildMapping;
+	    if (process.env.NODE_ENV !== 'production') {
+	      currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children, ReactInstanceMap.get(this)._debugID);
+	    } else {
+	      currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+	    }
+
+	    if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+	      // This was removed before it had fully entered. Remove it.
+	      this.performLeave(key);
+	    }
+	  },
+
+	  performLeave: function (key) {
+	    this.currentlyTransitioningKeys[key] = true;
+
+	    var component = this.refs[key];
+	    if (component.componentWillLeave) {
+	      component.componentWillLeave(this._handleDoneLeaving.bind(this, key));
+	    } else {
+	      // Note that this is somewhat dangerous b/c it calls setState()
+	      // again, effectively mutating the component before all the work
+	      // is done.
+	      this._handleDoneLeaving(key);
+	    }
+	  },
+
+	  _handleDoneLeaving: function (key) {
+	    var component = this.refs[key];
+
+	    if (component.componentDidLeave) {
+	      component.componentDidLeave();
+	    }
+
+	    delete this.currentlyTransitioningKeys[key];
+
+	    var currentChildMapping;
+	    if (process.env.NODE_ENV !== 'production') {
+	      currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children, ReactInstanceMap.get(this)._debugID);
+	    } else {
+	      currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+	    }
+
+	    if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
+	      // This entered again before it fully left. Add it again.
+	      this.performEnter(key);
+	    } else {
+	      this.setState(function (state) {
+	        var newChildren = _assign({}, state.children);
+	        delete newChildren[key];
+	        return { children: newChildren };
+	      });
+	    }
+	  },
+
+	  render: function () {
+	    // TODO: we could get rid of the need for the wrapper node
+	    // by cloning a single child
+	    var childrenToRender = [];
+	    for (var key in this.state.children) {
+	      var child = this.state.children[key];
+	      if (child) {
+	        // You may need to apply reactive updates to a child as it is leaving.
+	        // The normal React way to do it won't work since the child will have
+	        // already been removed. In case you need this behavior you can provide
+	        // a childFactory function to wrap every child, even the ones that are
+	        // leaving.
+	        childrenToRender.push(React.cloneElement(this.props.childFactory(child), { ref: key, key: key }));
+	      }
+	    }
+
+	    // Do not forward ReactTransitionGroup props to primitive DOM nodes
+	    var props = _assign({}, this.props);
+	    delete props.transitionLeave;
+	    delete props.transitionName;
+	    delete props.transitionAppear;
+	    delete props.transitionEnter;
+	    delete props.childFactory;
+	    delete props.transitionLeaveTimeout;
+	    delete props.transitionEnterTimeout;
+	    delete props.transitionAppearTimeout;
+	    delete props.component;
+
+	    return React.createElement(this.props.component, props, childrenToRender);
+	  }
+	});
+
+	module.exports = ReactTransitionGroup;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactTransitionChildMapping
+	 */
+
+	'use strict';
+
+	var flattenChildren = __webpack_require__(128);
+
+	var ReactTransitionChildMapping = {
+	  /**
+	   * Given `this.props.children`, return an object mapping key to child. Just
+	   * simple syntactic sugar around flattenChildren().
+	   *
+	   * @param {*} children `this.props.children`
+	   * @param {number=} selfDebugID Optional debugID of the current internal instance.
+	   * @return {object} Mapping of key to child
+	   */
+	  getChildMapping: function (children, selfDebugID) {
+	    if (!children) {
+	      return children;
+	    }
+
+	    if (process.env.NODE_ENV !== 'production') {
+	      return flattenChildren(children, selfDebugID);
+	    }
+
+	    return flattenChildren(children);
+	  },
+
+	  /**
+	   * When you're adding or removing children some may be added or removed in the
+	   * same render pass. We want to show *both* since we want to simultaneously
+	   * animate elements in and out. This function takes a previous set of keys
+	   * and a new set of keys and merges them with its best guess of the correct
+	   * ordering. In the future we may expose some of the utilities in
+	   * ReactMultiChild to make this easy, but for now React itself does not
+	   * directly have this concept of the union of prevChildren and nextChildren
+	   * so we implement it here.
+	   *
+	   * @param {object} prev prev children as returned from
+	   * `ReactTransitionChildMapping.getChildMapping()`.
+	   * @param {object} next next children as returned from
+	   * `ReactTransitionChildMapping.getChildMapping()`.
+	   * @return {object} a key set that contains all keys in `prev` and all keys
+	   * in `next` in a reasonable order.
+	   */
+	  mergeChildMappings: function (prev, next) {
+	    prev = prev || {};
+	    next = next || {};
+
+	    function getValueForKey(key) {
+	      if (next.hasOwnProperty(key)) {
+	        return next[key];
+	      } else {
+	        return prev[key];
+	      }
+	    }
+
+	    // For each key of `next`, the list of keys to insert before that key in
+	    // the combined list
+	    var nextKeysPending = {};
+
+	    var pendingKeys = [];
+	    for (var prevKey in prev) {
+	      if (next.hasOwnProperty(prevKey)) {
+	        if (pendingKeys.length) {
+	          nextKeysPending[prevKey] = pendingKeys;
+	          pendingKeys = [];
+	        }
+	      } else {
+	        pendingKeys.push(prevKey);
+	      }
+	    }
+
+	    var i;
+	    var childMapping = {};
+	    for (var nextKey in next) {
+	      if (nextKeysPending.hasOwnProperty(nextKey)) {
+	        for (i = 0; i < nextKeysPending[nextKey].length; i++) {
+	          var pendingNextKey = nextKeysPending[nextKey][i];
+	          childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
+	        }
+	      }
+	      childMapping[nextKey] = getValueForKey(nextKey);
+	    }
+
+	    // Finally, add the keys which didn't appear before any key in `next`
+	    for (i = 0; i < pendingKeys.length; i++) {
+	      childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
+	    }
+
+	    return childMapping;
+	  }
+	};
+
+	module.exports = ReactTransitionChildMapping;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactCSSTransitionGroupChild
+	 */
+
+	'use strict';
+
+	var React = __webpack_require__(2);
+	var ReactDOM = __webpack_require__(35);
+
+	var CSSCore = __webpack_require__(237);
+	var ReactTransitionEvents = __webpack_require__(238);
+
+	var onlyChild = __webpack_require__(33);
+
+	var TICK = 17;
+
+	var ReactCSSTransitionGroupChild = React.createClass({
+	  displayName: 'ReactCSSTransitionGroupChild',
+
+	  propTypes: {
+	    name: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.shape({
+	      enter: React.PropTypes.string,
+	      leave: React.PropTypes.string,
+	      active: React.PropTypes.string
+	    }), React.PropTypes.shape({
+	      enter: React.PropTypes.string,
+	      enterActive: React.PropTypes.string,
+	      leave: React.PropTypes.string,
+	      leaveActive: React.PropTypes.string,
+	      appear: React.PropTypes.string,
+	      appearActive: React.PropTypes.string
+	    })]).isRequired,
+
+	    // Once we require timeouts to be specified, we can remove the
+	    // boolean flags (appear etc.) and just accept a number
+	    // or a bool for the timeout flags (appearTimeout etc.)
+	    appear: React.PropTypes.bool,
+	    enter: React.PropTypes.bool,
+	    leave: React.PropTypes.bool,
+	    appearTimeout: React.PropTypes.number,
+	    enterTimeout: React.PropTypes.number,
+	    leaveTimeout: React.PropTypes.number
+	  },
+
+	  transition: function (animationType, finishCallback, userSpecifiedDelay) {
+	    var node = ReactDOM.findDOMNode(this);
+
+	    if (!node) {
+	      if (finishCallback) {
+	        finishCallback();
+	      }
+	      return;
+	    }
+
+	    var className = this.props.name[animationType] || this.props.name + '-' + animationType;
+	    var activeClassName = this.props.name[animationType + 'Active'] || className + '-active';
+	    var timeout = null;
+
+	    var endListener = function (e) {
+	      if (e && e.target !== node) {
+	        return;
+	      }
+
+	      clearTimeout(timeout);
+
+	      CSSCore.removeClass(node, className);
+	      CSSCore.removeClass(node, activeClassName);
+
+	      ReactTransitionEvents.removeEndEventListener(node, endListener);
+
+	      // Usually this optional callback is used for informing an owner of
+	      // a leave animation and telling it to remove the child.
+	      if (finishCallback) {
+	        finishCallback();
+	      }
+	    };
+
+	    CSSCore.addClass(node, className);
+
+	    // Need to do this to actually trigger a transition.
+	    this.queueClassAndNode(activeClassName, node);
+
+	    // If the user specified a timeout delay.
+	    if (userSpecifiedDelay) {
+	      // Clean-up the animation after the specified delay
+	      timeout = setTimeout(endListener, userSpecifiedDelay);
+	      this.transitionTimeouts.push(timeout);
+	    } else {
+	      // DEPRECATED: this listener will be removed in a future version of react
+	      ReactTransitionEvents.addEndEventListener(node, endListener);
+	    }
+	  },
+
+	  queueClassAndNode: function (className, node) {
+	    this.classNameAndNodeQueue.push({
+	      className: className,
+	      node: node
+	    });
+
+	    if (!this.timeout) {
+	      this.timeout = setTimeout(this.flushClassNameAndNodeQueue, TICK);
+	    }
+	  },
+
+	  flushClassNameAndNodeQueue: function () {
+	    if (this.isMounted()) {
+	      this.classNameAndNodeQueue.forEach(function (obj) {
+	        CSSCore.addClass(obj.node, obj.className);
+	      });
+	    }
+	    this.classNameAndNodeQueue.length = 0;
+	    this.timeout = null;
+	  },
+
+	  componentWillMount: function () {
+	    this.classNameAndNodeQueue = [];
+	    this.transitionTimeouts = [];
+	  },
+
+	  componentWillUnmount: function () {
+	    if (this.timeout) {
+	      clearTimeout(this.timeout);
+	    }
+	    this.transitionTimeouts.forEach(function (timeout) {
+	      clearTimeout(timeout);
+	    });
+
+	    this.classNameAndNodeQueue.length = 0;
+	  },
+
+	  componentWillAppear: function (done) {
+	    if (this.props.appear) {
+	      this.transition('appear', done, this.props.appearTimeout);
+	    } else {
+	      done();
+	    }
+	  },
+
+	  componentWillEnter: function (done) {
+	    if (this.props.enter) {
+	      this.transition('enter', done, this.props.enterTimeout);
+	    } else {
+	      done();
+	    }
+	  },
+
+	  componentWillLeave: function (done) {
+	    if (this.props.leave) {
+	      this.transition('leave', done, this.props.leaveTimeout);
+	    } else {
+	      done();
+	    }
+	  },
+
+	  render: function () {
+	    return onlyChild(this.props.children);
+	  }
+	});
+
+	module.exports = ReactCSSTransitionGroupChild;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @typechecks
+	 */
+
+	var invariant = __webpack_require__(8);
+
+	/**
+	 * The CSSCore module specifies the API (and implements most of the methods)
+	 * that should be used when dealing with the display of elements (via their
+	 * CSS classes and visibility on screen. It is an API focused on mutating the
+	 * display and not reading it as no logical state should be encoded in the
+	 * display of elements.
+	 */
+
+	/* Slow implementation for browsers that don't natively support .matches() */
+	function matchesSelector_SLOW(element, selector) {
+	  var root = element;
+	  while (root.parentNode) {
+	    root = root.parentNode;
+	  }
+
+	  var all = root.querySelectorAll(selector);
+	  return Array.prototype.indexOf.call(all, element) !== -1;
+	}
+
+	var CSSCore = {
+
+	  /**
+	   * Adds the class passed in to the element if it doesn't already have it.
+	   *
+	   * @param {DOMElement} element the element to set the class on
+	   * @param {string} className the CSS className
+	   * @return {DOMElement} the element passed in
+	   */
+	  addClass: function addClass(element, className) {
+	    !!/\s/.test(className) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'CSSCore.addClass takes only a single class name. "%s" contains ' + 'multiple classes.', className) : invariant(false) : void 0;
+
+	    if (className) {
+	      if (element.classList) {
+	        element.classList.add(className);
+	      } else if (!CSSCore.hasClass(element, className)) {
+	        element.className = element.className + ' ' + className;
+	      }
+	    }
+	    return element;
+	  },
+
+	  /**
+	   * Removes the class passed in from the element
+	   *
+	   * @param {DOMElement} element the element to set the class on
+	   * @param {string} className the CSS className
+	   * @return {DOMElement} the element passed in
+	   */
+	  removeClass: function removeClass(element, className) {
+	    !!/\s/.test(className) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'CSSCore.removeClass takes only a single class name. "%s" contains ' + 'multiple classes.', className) : invariant(false) : void 0;
+
+	    if (className) {
+	      if (element.classList) {
+	        element.classList.remove(className);
+	      } else if (CSSCore.hasClass(element, className)) {
+	        element.className = element.className.replace(new RegExp('(^|\\s)' + className + '(?:\\s|$)', 'g'), '$1').replace(/\s+/g, ' ') // multiple spaces to one
+	        .replace(/^\s*|\s*$/g, ''); // trim the ends
+	      }
+	    }
+	    return element;
+	  },
+
+	  /**
+	   * Helper to add or remove a class from an element based on a condition.
+	   *
+	   * @param {DOMElement} element the element to set the class on
+	   * @param {string} className the CSS className
+	   * @param {*} bool condition to whether to add or remove the class
+	   * @return {DOMElement} the element passed in
+	   */
+	  conditionClass: function conditionClass(element, className, bool) {
+	    return (bool ? CSSCore.addClass : CSSCore.removeClass)(element, className);
+	  },
+
+	  /**
+	   * Tests whether the element has the class specified.
+	   *
+	   * @param {DOMNode|DOMWindow} element the element to check the class on
+	   * @param {string} className the CSS className
+	   * @return {boolean} true if the element has the class, false if not
+	   */
+	  hasClass: function hasClass(element, className) {
+	    !!/\s/.test(className) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'CSS.hasClass takes only a single class name.') : invariant(false) : void 0;
+	    if (element.classList) {
+	      return !!className && element.classList.contains(className);
+	    }
+	    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
+	  },
+
+	  /**
+	   * Tests whether the element matches the selector specified
+	   *
+	   * @param {DOMNode|DOMWindow} element the element that we are querying
+	   * @param {string} selector the CSS selector
+	   * @return {boolean} true if the element matches the selector, false if not
+	   */
+	  matchesSelector: function matchesSelector(element, selector) {
+	    var matchesImpl = element.matches || element.webkitMatchesSelector || element.mozMatchesSelector || element.msMatchesSelector || function (s) {
+	      return matchesSelector_SLOW(element, s);
+	    };
+	    return matchesImpl.call(element, selector);
+	  }
+
+	};
+
+	module.exports = CSSCore;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule ReactTransitionEvents
+	 */
+
+	'use strict';
+
+	var ExecutionEnvironment = __webpack_require__(49);
+
+	var getVendorPrefixedEventName = __webpack_require__(109);
+
+	var endEvents = [];
+
+	function detectEvents() {
+	  var animEnd = getVendorPrefixedEventName('animationend');
+	  var transEnd = getVendorPrefixedEventName('transitionend');
+
+	  if (animEnd) {
+	    endEvents.push(animEnd);
+	  }
+
+	  if (transEnd) {
+	    endEvents.push(transEnd);
+	  }
+	}
+
+	if (ExecutionEnvironment.canUseDOM) {
+	  detectEvents();
+	}
+
+	// We use the raw {add|remove}EventListener() call because EventListener
+	// does not know how to remove event listeners and we really should
+	// clean up. Also, these events are not triggered in older browsers
+	// so we should be A-OK here.
+
+	function addEventListener(node, eventName, eventListener) {
+	  node.addEventListener(eventName, eventListener, false);
+	}
+
+	function removeEventListener(node, eventName, eventListener) {
+	  node.removeEventListener(eventName, eventListener, false);
+	}
+
+	var ReactTransitionEvents = {
+	  addEndEventListener: function (node, eventListener) {
+	    if (endEvents.length === 0) {
+	      // If CSS transitions are not supported, trigger an "end animation"
+	      // event immediately.
+	      window.setTimeout(eventListener, 0);
+	      return;
+	    }
+	    endEvents.forEach(function (endEvent) {
+	      addEventListener(node, endEvent, eventListener);
+	    });
+	  },
+
+	  removeEndEventListener: function (node, eventListener) {
+	    if (endEvents.length === 0) {
+	      return;
+	    }
+	    endEvents.forEach(function (endEvent) {
+	      removeEventListener(node, endEvent, eventListener);
+	    });
+	  }
+	};
+
+	module.exports = ReactTransitionEvents;
+
+/***/ },
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27108,7 +28001,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "productitems.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 233 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27137,9 +28030,28 @@
 	        this.props.params.name
 	      ),
 	      _react2.default.createElement(
-	        "span",
+	        "div",
 	        null,
-	        this.props.params.baige
+	        _react2.default.createElement("div", { className: "prod-bg" }),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "prod-price" },
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "250$"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            "*offer 50%"
+	          ),
+	          _react2.default.createElement(
+	            "button",
+	            { type: "submit" },
+	            "Buy"
+	          )
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "p",
@@ -27155,12 +28067,12 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "item.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 234 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27170,52 +28082,93 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactAddonsCssTransitionGroup = __webpack_require__(232);
+
+	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var About = _react2.default.createClass({
-	  displayName: "About",
+	  displayName: 'About',
 
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
-	      { className: "about" },
+	      _reactAddonsCssTransitionGroup2.default,
+	      {
+	        transitionName: 'example',
+	        transitionEnterTimeout: 700,
+	        transitionLeaveTimeout: 700,
+	        transitionAppear: true,
+	        transitionAppearTimeout: 500 },
 	      _react2.default.createElement(
-	        "section",
-	        null,
+	        'div',
+	        { className: 'about' },
 	        _react2.default.createElement(
-	          "h2",
+	          'section',
 	          null,
-	          "Glysse corp."
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut consectetur, dicta doloremque ducimus est eveniet magnam modi molestiae molestias natus quam quasi recusandae reiciendis, soluta ullam velit voluptates! ",
 	          _react2.default.createElement(
-	            "a",
-	            { href: "#" },
-	            "Animi aperiam"
+	            'h2',
+	            null,
+	            'Glysse corp.'
 	          ),
-	          " aspernatur atque beatae consectetur cum deserunt ea eos error, esse exercitationem explicabo fuga hic id ipsum, maiores minus modi nemo obcaecati possimus rem repellendus rerum saepe sint sunt tempore temporibus veniam. A ad aliquam consequuntur explicabo nobis repellat repellendus sapiente tenetur vitae voluptatum? Optio, quae, quos. "
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut consectetur, dicta doloremque ducimus est eveniet magnam modi molestiae molestias natus quam quasi recusandae reiciendis, soluta ullam velit voluptates! ',
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#' },
+	              'Animi aperiam'
+	            ),
+	            ' aspernatur atque beatae consectetur cum deserunt ea eos error, esse exercitationem explicabo fuga hic id ipsum, maiores minus modi nemo obcaecati possimus rem repellendus rerum saepe sint sunt tempore temporibus veniam. A ad aliquam consequuntur explicabo nobis repellat repellendus sapiente tenetur vitae voluptatum? Optio, quae, quos. '
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Alias eaque error inventore libero nihil possimus temporibus totam vitae voluptas voluptatibus. Accusantium aliquam consectetur deserunt dicta dolore dolores explicabo facere fuga id libero maiores nam natus repellendus, sint ut vel veniam veritatis vero voluptate voluptatem. Dolor eligendi eos est, fugit id itaque labore, maxime omnis provident quaerat quasi quisquam sed tempore veritatis vero. A amet assumenda blanditiis deleniti dicta, dolores enim exercitationem, nam neque officiis placeat porro quo reiciendis repellat, repudiandae vero voluptates voluptatum! Excepturi facilis fugit magnam quae quo quos. Enim.'
+	          )
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'section',
 	          null,
-	          "Alias eaque error inventore libero nihil possimus temporibus totam vitae voluptas voluptatibus. Accusantium aliquam consectetur deserunt dicta dolore dolores explicabo facere fuga id libero maiores nam natus repellendus, sint ut vel veniam veritatis vero voluptate voluptatem. Dolor eligendi eos est, fugit id itaque labore, maxime omnis provident quaerat quasi quisquam sed tempore veritatis vero. A amet assumenda blanditiis deleniti dicta, dolores enim exercitationem, nam neque officiis placeat porro quo reiciendis repellat, repudiandae vero voluptates voluptatum! Excepturi facilis fugit magnam quae quo quos. Enim."
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "section",
-	        null,
-	        _react2.default.createElement(
-	          "h2",
-	          null,
-	          "Our stuff"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi aut, autem corporis debitis distinctio eaque earum enim ex excepturi iusto libero molestiae molestias mollitia nam natus nesciunt nisi nulla officiis pariatur placeat quasi quidem reiciendis rem repellat reprehenderit sequi sunt unde velit vero vitae voluptatem voluptates? Architecto beatae dolores facilis fugiat iure, molestiae perferendis repellat repellendus sapiente tempora."
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Our stuff'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi aut, autem corporis debitis distinctio eaque earum enim ex excepturi iusto libero molestiae molestias mollitia nam natus nesciunt nisi nulla officiis pariatur placeat quasi quidem reiciendis rem repellat reprehenderit sequi sunt unde velit vero vitae voluptatem voluptates? Architecto beatae dolores facilis fugiat iure, molestiae perferendis repellat repellendus sapiente tempora.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'about-ul' },
+	            _react2.default.createElement(
+	              'ul',
+	              null,
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet.'
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                'Lorem ipsum dolor sit amet.'
+	              )
+	            )
+	          )
 	        )
 	      )
 	    );
@@ -27227,12 +28180,12 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "about.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 235 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27242,86 +28195,97 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactAddonsCssTransitionGroup = __webpack_require__(232);
+
+	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Contacts = _react2.default.createClass({
-	  displayName: "Contacts",
+	  displayName: 'Contacts',
 
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
-	      { className: "contact" },
+	      _reactAddonsCssTransitionGroup2.default,
+	      {
+	        transitionName: 'example',
+	        transitionEnterTimeout: 700,
+	        transitionLeaveTimeout: 700,
+	        transitionAppear: true,
+	        transitionAppearTimeout: 500 },
 	      _react2.default.createElement(
-	        "section",
-	        null,
+	        'div',
+	        { className: 'contact' },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "adress" },
+	          'section',
+	          null,
 	          _react2.default.createElement(
-	            "span",
-	            null,
+	            'div',
+	            { className: 'adress' },
 	            _react2.default.createElement(
-	              "b",
+	              'span',
 	              null,
-	              "tel."
+	              _react2.default.createElement(
+	                'b',
+	                null,
+	                'tel.'
+	              ),
+	              ': 206-276-5476'
 	            ),
-	            ": 206-276-5476"
-	          ),
-	          _react2.default.createElement(
-	            "span",
-	            null,
 	            _react2.default.createElement(
-	              "b",
+	              'span',
 	              null,
-	              "email"
+	              _react2.default.createElement(
+	                'b',
+	                null,
+	                'email'
+	              ),
+	              ': sarahru@johnlscott.com'
 	            ),
-	            ": sarahru@johnlscott.com"
-	          ),
-	          _react2.default.createElement(
-	            "span",
-	            null,
 	            _react2.default.createElement(
-	              "b",
+	              'span',
 	              null,
-	              "address"
+	              _react2.default.createElement(
+	                'b',
+	                null,
+	                'address'
+	              ),
+	              ': Las Vegas Strip Nevada, US 98126'
 	            ),
-	            ": Las Vegas Strip Nevada, US 98126"
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'state license # WA #82425'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            "span",
-	            null,
-	            "state license # WA #82425"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "socials" },
-	          _react2.default.createElement(
-	            "span",
-	            null,
-	            "Socials:"
+	            'div',
+	            { className: 'socials' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Socials:'
+	            ),
+	            _react2.default.createElement('a', { href: '#' }),
+	            _react2.default.createElement('a', { href: '#' }),
+	            _react2.default.createElement('a', { href: '#' }),
+	            _react2.default.createElement('a', { href: '#' })
 	          ),
-	          _react2.default.createElement("a", { href: "#" }),
-	          _react2.default.createElement("a", { href: "#" }),
-	          _react2.default.createElement("a", { href: "#" }),
-	          _react2.default.createElement("a", { href: "#" })
-	        ),
-	        _react2.default.createElement("iframe", { className: "map", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8121.867303035811!2d-115.17519180584799!3d36.113835617127144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4383428d4eb%3A0x43e2195d0c26834c!2z0JvQsNGBINCS0LXQs9Cw0YEg0KHRgtGA0LjQvywg0J3QtdCy0LDQtNCwLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1482153551286", width: "600", height: "450" }),
-	        _react2.default.createElement(
-	          "form",
-	          { action: "mail.php", method: "POST" },
-	          _react2.default.createElement("input", { type: "text", required: "required", name: "textfield", placeholder: "Your Name" }),
-	          _react2.default.createElement("input", { type: "email", required: "required", name: "email", placeholder: "Your E-Mail" }),
-	          _react2.default.createElement("textarea", { required: "required", name: "textarea", placeholder: "Your message" }),
+	          _react2.default.createElement('iframe', { className: 'map', src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8121.867303035811!2d-115.17519180584799!3d36.113835617127144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4383428d4eb%3A0x43e2195d0c26834c!2z0JvQsNGBINCS0LXQs9Cw0YEg0KHRgtGA0LjQvywg0J3QtdCy0LDQtNCwLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1482153551286', width: '600', height: '450' }),
 	          _react2.default.createElement(
-	            "button",
-	            { className: "contactButton", type: "submit" },
-	            "Send"
+	            'form',
+	            { action: 'mail.php', method: 'POST' },
+	            _react2.default.createElement('input', { type: 'text', required: 'required', name: 'textfield', placeholder: 'Your Name' }),
+	            _react2.default.createElement('input', { type: 'email', required: 'required', name: 'email', placeholder: 'Your E-Mail' }),
+	            _react2.default.createElement('textarea', { required: 'required', name: 'textarea', placeholder: 'Your message' }),
+	            _react2.default.createElement(
+	              'button',
+	              { className: 'contactButton', type: 'submit' },
+	              'Send'
+	            )
 	          )
 	        )
-	      ),
-	      _react2.default.createElement("section", null),
-	      _react2.default.createElement("section", null)
+	      )
 	    );
 	  }
 	});
@@ -27331,16 +28295,16 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "contact.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 236 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(237);
+	var content = __webpack_require__(244);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(248)(content, {});
+	var update = __webpack_require__(255)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27357,21 +28321,21 @@
 	}
 
 /***/ },
-/* 237 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(238)();
+	exports = module.exports = __webpack_require__(245)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tfont: 16px sans-serif;\r\n\toverflow: hidden;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n}\r\n\r\nimg {\r\n\twidth: 100%;\r\n\tmin-height: 100%;\r\n\tborder: 0;\r\n\toutline: none;\r\n}\r\n\r\nul, ol, h1, h2, h3 {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\np {\r\n\tfont-size: 18px;\r\n}\r\n\r\np::-moz-selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\np::selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\nnav {\r\n\tposition: fixed;\r\n\twidth: 100%;\r\n\tbackground: -webkit-linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tbackground: linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tz-index: 2;\r\n\tbox-shadow: 0 0 10px #333;\r\n}\r\n\r\nnav ul {\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n}\r\n\r\nnav li a {\r\n\tdisplay: block;\r\n\tpadding: 20px 30px;\r\n\tcolor: aliceblue;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tbackground: #345;\r\n}\r\n\r\n.logo {\r\n\twidth: 140px;\r\n\tbackground: url(" + __webpack_require__(239) + ") no-repeat 50%;\r\n}\r\n\r\n#main {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.slider {\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 100vh;\r\n\ttext-align: center;\r\n}\r\n\r\n.slider label {\r\n\tdisplay: inline-block;\r\n\twidth: 15%;\r\n\theight: 100px;\r\n\tmargin-top: 75vh;\r\n\tcursor: pointer;\r\n\tcolor: #fff;\r\n\tfont: 600 130px impact, sans-serif;\r\n\tposition: relative;\r\n\tz-index: 1000;\r\n}\r\n\r\n.slider label:before {\r\n\tcontent:'';\r\n\twidth: 100px;\r\n\theight: 100px;\r\n\tbackground: url(" + __webpack_require__(240) + ") 40% 50%;\r\n\tposition: absolute;\r\n\tbox-shadow: 0 0 0 2px rgba(255,255,255,0.2);\r\n\tz-index:-1;\r\n}\r\n\r\n.select-img-1:checked ~ .label-img-1:before,\r\n.select-img-2:checked ~ .label-img-2:before,\r\n.select-img-3:checked ~ .label-img-3:before,\r\n.select-img-4:checked ~ .label-img-4:before {\r\n\t-webkit-transform: scale(1.2);\r\n\t        transform: scale(1.2);\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.slider input {\r\n\tdisplay: none;\r\n}\r\n\r\n.slider-bg {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\tz-index: 1;\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div {\r\n\twidth: 25%;\r\n\theight: 100%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n\toverflow: hidden;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.slider-bg div span {\r\n\tposition: absolute;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\t-webkit-transform: scale(1.5);\r\n\t        transform: scale(1.5);\r\n\topacity: 0;\r\n\tz-index: 2;\r\n\ttext-indent: -9000px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .slider-bg, .slider-bg div span:nth-child(1) {\r\n\tbackground: url(" + __webpack_require__(241) + ");\r\n}\r\n\r\n.slider .select-img-2:checked ~ .slider-bg, .slider-bg div span:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(240) + ");\r\n}\r\n\r\n.slider .select-img-3:checked ~ .slider-bg, .slider-bg div span:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(242) + ");\r\n}\r\n\r\n.slider .select-img-4:checked ~ .slider-bg, .slider-bg div span:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(243) + ");\r\n}\r\n\r\n.slider-bg div:nth-child(1) span {\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div:nth-child(2) span {\r\n\tbackground-position: -100% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(3) span {\r\n\tbackground-position: -200% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(4) span {\r\n\tbackground-position: -300% 0;\r\n}\r\n\r\n.slider input:checked ~ .slider-bg div span {\r\n\t-webkit-animation: zoommy 0.6s ease-in-out;\r\n\t        animation: zoommy 0.6s ease-in-out;\r\n}\r\n\r\n@-webkit-keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n@keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n.slider input.select-img-1:checked ~ .slider-bg div span:nth-child(1),\r\n.slider input.select-img-2:checked ~ .slider-bg div span:nth-child(2),\r\n.slider input.select-img-3:checked ~ .slider-bg div span:nth-child(3),\r\n.slider input.select-img-4:checked ~ .slider-bg div span:nth-child(4) {\r\n\t-webkit-transition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\t-webkit-animation: none;\r\n\t        animation: none;\r\n\t-webkit-transform: scale(1);\r\n\t        transform: scale(1);\r\n\topacity: 1;\r\n\tz-index: 1000;\r\n}\r\n\r\n.title h2 {\r\n\tposition: absolute;\r\n\ttop: 380px;\r\n\tleft: 350px;\r\n\tfont: 400 80px impact, sans-serif;\r\n\ttext-transform: uppercase;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tcolor: aliceblue;\r\n\ttext-shadow: 0 0 50px #000;\r\n\tz-index: 10;\r\n\topacity: 0;\r\n}\r\n\r\n.title p {\r\n\tposition: absolute;\r\n\twidth: 50%;\r\n\tpadding: 20px;\r\n\ttop: 430px;\r\n\tleft: 500px;\r\n\tfont: 400 20px sans-serif;\r\n\tcolor: aliceblue;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tz-index: 9;\r\n\topacity: 0;\r\n\tbackground: rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) h2,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) h2,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) h2,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) h2 {\r\n\topacity: 1;\r\n\tletter-spacing: 6px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) p,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) p,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) p,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) p {\r\n\topacity: 1;\r\n}\r\n\r\n\r\n.page-transition-enter {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 0;\r\n  position: absolute;\r\n}\r\n.page-transition-enter.page-transition-enter-active {\r\n  opacity: 1;\r\n}\r\n.page-transition-leave {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 1;\r\n  position: absolute;\r\n}\r\n.page-transition-leave.page-transition-leave-active {\r\n  opacity: 0;\r\n}\r\n\r\n.content {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.product, .about, .contact {\r\n\twidth: 1400px;\r\n\theight: 100vh;\r\n\tmargin: 0 auto;\r\n\tbackground: #f4f4f4;\r\n\tbox-shadow: 0 0 10px 1px #bebebe;\r\n}\r\n\r\n/*_______________Products Styles_________*/\r\n\r\n.product {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: justify;\r\n\t    -ms-flex-pack: justify;\r\n\t        justify-content: space-between;\r\n\t-webkit-box-align: start;\r\n\t    -ms-flex-align: start;\r\n\t        align-items: flex-start;\r\n}\r\n\r\n.product aside {\r\n\tdisplay: block;\r\n\twidth: 25%;\r\n\theight: 100vh;\r\n\tbackground: #333;\r\n}\r\n\r\naside a {\r\n\tdisplay: block;\r\n\tpadding: 20px 40px;\r\n\tcolor: #dbd9d9;\r\n\tborder-bottom: 1px solid #444;\r\n\tfont: 600 19px sans-serif;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tletter-spacing: 1px;\r\n}\r\n\r\naside a:hover {\r\n\tbackground: #345;\r\n\t-webkit-transition: background .3s ease-in-out;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n\r\n.product section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t-ms-flex-line-pack: start;\r\n\t    align-content: flex-start;\r\n\twidth: 75%;\r\n\tpadding: 30px 50px;\r\n\theight: inherit;\r\n}\r\n\r\n.prod-item {\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-bottom: 30px;\r\n\tpadding-top: 7%;\r\n\tbackground: url(" + __webpack_require__(242) + ") 50% 40%;\r\n\tborder: 1px solid;\r\n\tcolor: #ffffff;\r\n\ttext-decoration: none;\r\n\ttext-align: center;\r\n\tbox-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\r\n\t-webkit-transition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n\ttransition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n}\r\n\r\n.prod-item:hover {\r\n\tbox-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\r\n}\r\n\r\n.prod-item h2 {\r\n\tmargin-bottom: 30px;\r\n\tfont-size: 30px;\r\n}\r\n\r\n.prod-item p {\r\n\twidth: 60%;\r\n\tpadding: 15px 0;\r\n\tmargin-left: -5px;\r\n\tbackground: salmon;\r\n\ttext-shadow: 0 0 4px black;\r\n}\r\n\r\n/*_______________About Styles_________*/\r\n.about {\r\n\tpadding: 60px 150px;\r\n}\r\n\r\n.about section {\r\n\tmargin-bottom: 50px;\r\n}\r\n\r\n.about h2 {\r\n\twidth: 50%;\r\n\tmargin-bottom: 25px;\r\n\tborder-bottom: 1px solid;\r\n\tfont: 600 30px arial, sans-serif;\r\n}\r\n\r\n.about p {\r\n\tpadding: 20px 40px 0 40px;\r\n\tmargin: 0;\r\n}\r\n\r\n.about a, .contact a {\r\n\tcolor: #66afe9;\r\n\ttext-decoration: none;\r\n\t-webkit-transition: all 0.1s linear;\r\n\ttransition: all 0.1s linear;\r\n}\r\n\r\n.about a:hover, .contact a:hover {\r\n\tcolor: #ffffff;\r\n\tbackground: #aed3e7;\r\n\ttext-decoration: underline;\r\n}\r\n\r\n/*________________Contact Styles_________*/\r\n.contact section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t/*flex-direction: column;*/\r\n}\r\n\r\n.adress, .socials {\r\n\twidth: 50%;\r\n\tpadding: 30px 0 50px 150px;\r\n}\r\n\r\n.adress span {\r\n\tdisplay: block;\r\n\tpadding-top: 20px;\r\n}\r\n\r\n.socials span {\r\n\tdisplay: block;\r\n\tpadding: 20px 20px 10px 0;\r\n\tfont-size: 28px;\r\n\tfont-weight: 600;\r\n}\r\n\r\n.socials a {\r\n\tdisplay: inline-block;\r\n\twidth: 32px;\r\n\theight: 32px;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.socials a:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(244) + ");\r\n}\r\n\r\n.socials a:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(245) + ");\r\n}\r\n\r\n.socials a:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(246) + ");\r\n}\r\n\r\n.socials a:nth-child(5) {\r\n\tbackground: url(" + __webpack_require__(247) + ");\r\n}\r\n\r\n.map {\r\n\tborder: 10px solid #fff;\r\n\tborder-radius: 5px;\r\n}\r\n\r\n.map .gmnoprint,.map .gmnoscreen {\r\n\tdisplay: none;\r\n}\r\n\r\n.contact form {\r\n\twidth: 35%;\r\n\tpadding: 20px;\r\n\tborder: 1px solid #a8a8a8;\r\n\tborder-radius: 5px;\r\n\ttext-align: center;\r\n\tbackground: -webkit-radial-gradient(center ellipse, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbackground: radial-gradient(ellipse at center, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbox-shadow: 0 0 10px -2px #333333;\r\n}\r\n\r\n.contact input,.contact textarea {\r\n\twidth: 100%;\r\n\tpadding: 8px;\r\n\tmargin-bottom: 10px;\r\n\tborder: 1px solid #d8d8d8;\r\n\tbox-sizing: border-box;\r\n\tfont: 16px sans-serif;\r\n}\r\n\r\n.contact textarea {\r\n\theight: 200px;\r\n\tresize: none;\r\n}\r\n\r\n.contact input:focus, .contact textarea:focus {\r\n\tborder-color: #66afe9;\r\n\toutline: 0;\r\n\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n\r\n.contactButton {\r\n\twidth: 90px;\r\n\theight: 90px;\r\n\tbackground: #6384A9;\r\n\tborder: 1px solid #fff;\r\n\tborder-radius: 50%;\r\n\tbox-shadow: inset 0 8px 10px 0 rgba(255, 255, 255, 0.25);\r\n\tfont-size: 20px;\r\n\tfont-weight: 600;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\t-webkit-transition: all 0.3s linear;\r\n\ttransition: all 0.3s linear;\r\n}\r\n\r\n.contactButton:hover {\r\n\tbackground: #3daa6b;\r\n}\r\n\r\n.active {\r\n\tbackground: #537392;\r\n}\r\n", ""]);
+	exports.push([module.id, "body {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tfont: 16px sans-serif;\r\n\toverflow: hidden;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n}\r\n\r\nimg {\r\n\twidth: 100%;\r\n\tmin-height: 100%;\r\n\tborder: 0;\r\n\toutline: none;\r\n}\r\n\r\nul, ol, h1, h2, h3 {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\np {\r\n\tfont-size: 18px;\r\n}\r\n\r\np::-moz-selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\np::selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\nnav {\r\n\tposition: fixed;\r\n\twidth: 100%;\r\n\tbackground: -webkit-linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tbackground: linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tz-index: 2;\r\n\tbox-shadow: 0 0 10px #333;\r\n}\r\n\r\nnav ul {\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n}\r\n\r\nnav li a {\r\n\tdisplay: block;\r\n\tpadding: 20px 30px;\r\n\tcolor: aliceblue;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tbackground: #345;\r\n}\r\n\r\n.logo {\r\n\twidth: 140px;\r\n\tbackground: url(" + __webpack_require__(246) + ") no-repeat 50%;\r\n}\r\n\r\n#main {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.slider {\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 100vh;\r\n\ttext-align: center;\r\n}\r\n\r\n.slider label {\r\n\tdisplay: inline-block;\r\n\twidth: 15%;\r\n\theight: 100px;\r\n\tmargin-top: 75vh;\r\n\tcursor: pointer;\r\n\tcolor: #fff;\r\n\tfont: 600 130px impact, sans-serif;\r\n\tposition: relative;\r\n\tz-index: 1000;\r\n}\r\n\r\n.slider label:before {\r\n\tcontent:'';\r\n\twidth: 100px;\r\n\theight: 100px;\r\n\tbackground: url(" + __webpack_require__(247) + ") 40% 50%;\r\n\tposition: absolute;\r\n\tbox-shadow: 0 0 0 2px rgba(255,255,255,0.2);\r\n\tz-index:-1;\r\n}\r\n\r\n.select-img-1:checked ~ .label-img-1:before,\r\n.select-img-2:checked ~ .label-img-2:before,\r\n.select-img-3:checked ~ .label-img-3:before,\r\n.select-img-4:checked ~ .label-img-4:before {\r\n\t-webkit-transform: scale(1.2);\r\n\t        transform: scale(1.2);\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.slider input {\r\n\tdisplay: none;\r\n}\r\n\r\n.slider-bg {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\tz-index: 1;\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div {\r\n\twidth: 25%;\r\n\theight: 100%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n\toverflow: hidden;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.slider-bg div span {\r\n\tposition: absolute;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\t-webkit-transform: scale(1.5);\r\n\t        transform: scale(1.5);\r\n\topacity: 0;\r\n\tz-index: 2;\r\n\ttext-indent: -9000px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .slider-bg, .slider-bg div span:nth-child(1) {\r\n\tbackground: url(" + __webpack_require__(248) + ");\r\n}\r\n\r\n.slider .select-img-2:checked ~ .slider-bg, .slider-bg div span:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(247) + ");\r\n}\r\n\r\n.slider .select-img-3:checked ~ .slider-bg, .slider-bg div span:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(249) + ");\r\n}\r\n\r\n.slider .select-img-4:checked ~ .slider-bg, .slider-bg div span:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(250) + ");\r\n}\r\n\r\n.slider-bg div:nth-child(1) span {\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div:nth-child(2) span {\r\n\tbackground-position: -100% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(3) span {\r\n\tbackground-position: -200% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(4) span {\r\n\tbackground-position: -300% 0;\r\n}\r\n\r\n.slider input:checked ~ .slider-bg div span {\r\n\t-webkit-animation: zoommy 0.6s ease-in-out;\r\n\t        animation: zoommy 0.6s ease-in-out;\r\n}\r\n\r\n@-webkit-keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n@keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n.slider input.select-img-1:checked ~ .slider-bg div span:nth-child(1),\r\n.slider input.select-img-2:checked ~ .slider-bg div span:nth-child(2),\r\n.slider input.select-img-3:checked ~ .slider-bg div span:nth-child(3),\r\n.slider input.select-img-4:checked ~ .slider-bg div span:nth-child(4) {\r\n\t-webkit-transition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\t-webkit-animation: none;\r\n\t        animation: none;\r\n\t-webkit-transform: scale(1);\r\n\t        transform: scale(1);\r\n\topacity: 1;\r\n\tz-index: 1000;\r\n}\r\n\r\n.title h2 {\r\n\tposition: absolute;\r\n\ttop: 380px;\r\n\tleft: 350px;\r\n\tfont: 400 80px impact, sans-serif;\r\n\ttext-transform: uppercase;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tcolor: aliceblue;\r\n\ttext-shadow: 0 0 50px #000;\r\n\tz-index: 10;\r\n\topacity: 0;\r\n}\r\n\r\n.title p {\r\n\tposition: absolute;\r\n\twidth: 50%;\r\n\tpadding: 20px;\r\n\ttop: 430px;\r\n\tleft: 500px;\r\n\tfont: 400 20px sans-serif;\r\n\tcolor: aliceblue;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tz-index: 9;\r\n\topacity: 0;\r\n\tbackground: rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) h2,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) h2,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) h2,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) h2 {\r\n\topacity: 1;\r\n\tletter-spacing: 6px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) p,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) p,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) p,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) p {\r\n\topacity: 1;\r\n}\r\n\r\n\r\n.page-transition-enter {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 0;\r\n  position: absolute;\r\n}\r\n.page-transition-enter.page-transition-enter-active {\r\n  opacity: 1;\r\n}\r\n.page-transition-leave {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 1;\r\n  position: absolute;\r\n}\r\n.page-transition-leave.page-transition-leave-active {\r\n  opacity: 0;\r\n}\r\n\r\n.content {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.product, .about, .contact {\r\n\twidth: 1400px;\r\n\theight: 100vh;\r\n\tmargin: 0 auto;\r\n\tbackground: #f4f4f4;\r\n\tbox-shadow: 0 0 10px 1px #bebebe;\r\n}\r\n\r\n/*_______________Products Styles_________*/\r\n\r\n.product {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: justify;\r\n\t    -ms-flex-pack: justify;\r\n\t        justify-content: space-between;\r\n\t-webkit-box-align: start;\r\n\t    -ms-flex-align: start;\r\n\t        align-items: flex-start;\r\n}\r\n\r\n.product aside {\r\n\tdisplay: block;\r\n\twidth: 25%;\r\n\theight: 100vh;\r\n\tbackground: #333;\r\n}\r\n\r\naside a {\r\n\tdisplay: block;\r\n\tpadding: 20px 40px;\r\n\tcolor: #dbd9d9;\r\n\tborder-bottom: 1px solid #444;\r\n\tfont: 600 19px sans-serif;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tletter-spacing: 1px;\r\n}\r\n\r\naside a:hover {\r\n\tbackground: #345;\r\n\t-webkit-transition: background .3s ease-in-out;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n\r\n.product section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t-ms-flex-line-pack: start;\r\n\t    align-content: flex-start;\r\n\twidth: 75%;\r\n\tpadding: 30px 50px;\r\n\theight: inherit;\r\n}\r\n\r\n.prod-item {\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-bottom: 30px;\r\n\tpadding-top: 7%;\r\n\tbackground: url(" + __webpack_require__(249) + ") 50% 40%;\r\n\tborder: 1px solid;\r\n\tcolor: #ffffff;\r\n\ttext-decoration: none;\r\n\ttext-align: center;\r\n\tbox-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\r\n\t-webkit-transition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n\ttransition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n}\r\n\r\n.prod-item:hover {\r\n\tbox-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\r\n}\r\n\r\n.prod-item h2 {\r\n\tmargin-bottom: 30px;\r\n\tfont-size: 30px;\r\n}\r\n\r\n.prod-item p {\r\n\twidth: 60%;\r\n\tpadding: 15px 0;\r\n\tmargin-left: -5px;\r\n\tbackground: salmon;\r\n\ttext-shadow: 0 0 4px black;\r\n}\r\n\r\n.prod-advantages {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\twidth: 100%;\r\n\tmargin-top: 50px;\r\n\ttext-align: center;\r\n}\r\n\r\n.prod-advantages div {\r\n\twidth: 22%;\r\n\tpadding: 40px;\r\n\tborder-right: 1px solid #a8a8a8;\r\n}\r\n\r\n.prod-advantages div:last-child {\r\n\tborder-right: 0;\r\n}\r\n\r\n.prod-advantages p {\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.product .item {\r\n\tdisplay: block;\r\n}\r\n\r\n.item h2 {\r\n\tmargin-bottom: 10px;\r\n\tfont-size: 40px;\r\n\tfont-weight: 600;\r\n\tborder-bottom: 2px solid;\r\n}\r\n\r\n.prod-bg {\r\n\tfloat: left;\r\n\twidth: 600px;\r\n\theight: 350px;\r\n\tpadding: 10px;\r\n\tmargin: 0 50px 50px 0;\r\n\tbackground: url(" + __webpack_require__(248) + ") no-repeat 40%;\r\n}\r\n\r\n.prod-price {\r\n\tfloat: left;\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-top: 100px;\r\n\ttext-align: center;\r\n\tbackground: #e8e8e8;\r\n\tborder-radius: 15px;\r\n\tborder: 4px solid #fff;\r\n}\r\n\r\n.prod-price span {\r\n\tdisplay: block;\r\n\tmargin: 50px 50px 15px 50px;\r\n\tfont-size: 40px;\r\n\tfont-weight: 600;\r\n\tcolor: #585858;\r\n}\r\n\r\n.prod-price span:nth-child(2) {\r\n\tdisplay: block;\r\n\tmargin: 10px 0 20px 0;\r\n\tfont-size: 16px;\r\n\tfont-weight: 600;\r\n\tcolor: #585858;\r\n}\r\n\r\n.prod-price button {\r\n\twidth: 200px;\r\n\tpadding: 10px;\r\n\tbackground: #66af00;\r\n\tborder: 0;\r\n\tborder-bottom: 5px solid #5b9a03;\r\n\tborder-radius: 5px;\r\n\tcolor: white;\r\n\tfont: 30px impact, sans-serif;\r\n\toutline: none;\r\n}\r\n\r\n.prod-price button:hover {\r\n\tbackground: #5b9a03;\r\n\tborder-bottom: 5px solid #4c8003;\r\n}\r\n\r\n.prod-price button:active {\r\n\tbackground: #5b9a03;\r\n\tborder-bottom: 0;\r\n\t-webkit-transform: translateY(5px);\r\n\t        transform: translateY(5px);\r\n}\r\n\r\n.item p {\r\n\tclear: both;\r\n}\r\n\r\n/*_______________About Styles_________*/\r\n.about {\r\n\tpadding: 60px 150px;\r\n}\r\n\r\n.about section {\r\n\tmargin-bottom: 50px;\r\n}\r\n\r\n.about h2 {\r\n\twidth: 50%;\r\n\tmargin-bottom: 25px;\r\n\tborder-bottom: 1px solid;\r\n\tfont: 600 30px arial, sans-serif;\r\n}\r\n\r\n.about p {\r\n\tpadding: 20px 40px 40px 40px;\r\n\tmargin: 0;\r\n}\r\n\r\n.about a, .contact a {\r\n\tcolor: #66afe9;\r\n\ttext-decoration: none;\r\n\t-webkit-transition: all 0.1s linear;\r\n\ttransition: all 0.1s linear;\r\n}\r\n\r\n.about a:hover, .contact a:hover {\r\n\tcolor: #ffffff;\r\n\tbackground: #aed3e7;\r\n\ttext-decoration: underline;\r\n}\r\n\r\n.about-ul {\r\n\tlist-style: circle;\r\n\tfont-size: 18px;\r\n\tcolor: #444444;\r\n}\r\n\r\n.about-ul ul {\r\n\tmargin-left: 40px;\r\n\tlist-style: circle;\r\n}\r\n\r\n.about-ul li {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n/*________________Contact Styles_________*/\r\n.contact section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t/*flex-direction: column;*/\r\n}\r\n\r\n.adress, .socials {\r\n\twidth: 50%;\r\n\tpadding: 30px 0 50px 150px;\r\n}\r\n\r\n.adress span {\r\n\tdisplay: block;\r\n\tpadding-top: 20px;\r\n}\r\n\r\n.socials span {\r\n\tdisplay: block;\r\n\tpadding: 20px 20px 10px 0;\r\n\tfont-size: 28px;\r\n\tfont-weight: 600;\r\n}\r\n\r\n.socials a {\r\n\tdisplay: inline-block;\r\n\twidth: 32px;\r\n\theight: 32px;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.socials a:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(251) + ");\r\n}\r\n\r\n.socials a:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(252) + ");\r\n}\r\n\r\n.socials a:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(253) + ");\r\n}\r\n\r\n.socials a:nth-child(5) {\r\n\tbackground: url(" + __webpack_require__(254) + ");\r\n}\r\n\r\n.map {\r\n\tborder: 10px solid #fff;\r\n\tborder-radius: 5px;\r\n}\r\n\r\n.map .gmnoprint,.map .gmnoscreen {\r\n\tdisplay: none;\r\n}\r\n\r\n.contact form {\r\n\twidth: 35%;\r\n\tpadding: 20px;\r\n\tborder: 1px solid #a8a8a8;\r\n\tborder-radius: 5px;\r\n\ttext-align: center;\r\n\tbackground: -webkit-radial-gradient(center ellipse, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbackground: radial-gradient(ellipse at center, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbox-shadow: 0 0 10px -2px #333333;\r\n}\r\n\r\n.contact input,.contact textarea {\r\n\twidth: 100%;\r\n\tpadding: 8px;\r\n\tmargin-bottom: 10px;\r\n\tborder: 1px solid #d8d8d8;\r\n\tbox-sizing: border-box;\r\n\tfont: 16px sans-serif;\r\n}\r\n\r\n.contact textarea {\r\n\theight: 200px;\r\n\tresize: none;\r\n}\r\n\r\n.contact input:focus, .contact textarea:focus {\r\n\tborder-color: #66afe9;\r\n\toutline: 0;\r\n\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n\r\n.contactButton {\r\n\twidth: 90px;\r\n\theight: 90px;\r\n\tbackground: #6384A9;\r\n\tborder: 1px solid #fff;\r\n\tborder-radius: 50%;\r\n\tbox-shadow: inset 0 8px 10px 0 rgba(255, 255, 255, 0.25);\r\n\tfont-size: 20px;\r\n\tfont-weight: 600;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\t-webkit-transition: all 0.3s linear;\r\n\ttransition: all 0.3s linear;\r\n}\r\n\r\n.contactButton:hover {\r\n\tbackground: #3daa6b;\r\n}\r\n\r\n.active {\r\n\tbackground: #537392;\r\n}\r\n\r\n.example-enter {\r\n\topacity: 0.01;\r\n}\r\n\r\n.example-enter.example-enter-active {\r\n\topacity: 1;\r\n\t-webkit-transition: opacity 500ms ease-in;\r\n\ttransition: opacity 500ms ease-in;\r\n}\r\n\r\n.example-leave {\r\n\topacity: 1;\r\n}\r\n\r\n.example-leave.example-leave-active {\r\n\topacity: 0.01;\r\n\t-webkit-transition: opacity 300ms ease-in;\r\n\ttransition: opacity 300ms ease-in;\r\n}\r\n\r\n.example-appear {\r\n\topacity: 0.01;\r\n\t-webkit-transform: translateY(-10px);\r\n\t        transform: translateY(-10px);\r\n}\r\n\r\n.example-appear.example-appear-active {\r\n\topacity: 1;\r\n\t-webkit-transform: translateY(0);\r\n\t        transform: translateY(0);\r\n\t-webkit-transition: all .5s ease-in;\r\n\ttransition: all .5s ease-in;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 238 */
+/* 245 */
 /***/ function(module, exports) {
 
 	/*
@@ -27427,61 +28391,61 @@
 
 
 /***/ },
-/* 239 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ea4049bc29f2474a57577f79ea5f7056.jpg";
 
 /***/ },
-/* 240 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f89799669d29abf906323c8ffb8245c0.jpg";
 
 /***/ },
-/* 241 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "520bcf76d193821a45dea62499278686.jpg";
 
 /***/ },
-/* 242 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d5e17938e5dcf31467cae1bcb8d31570.jpg";
 
 /***/ },
-/* 243 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "22e3422bf77e87875ed33d9ef7e0f4c1.jpg";
 
 /***/ },
-/* 244 */
+/* 251 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADM0lEQVRYhe2Xz2scZRjHP887s7O72ayNXWtsbAgIgRYRLBXSFsGDgl7aW6+Kgh5E8Fb14B8gIm0RSmt7V6sXKyLY6kmhBhT0Yosm1cb8kPxoWrKb+fk+HrKp7u7M7G5byCXPYYaZed/v832e9/k1wufLyhaK2Url2wS2CQC49xVN/5dQIvdIYBOrFxxVdhcNR3Z77Bkw3GgoX8yGLEZ2g4hVBl1hLenEk6w6sLdiqHnCDytxrjVG4eUxjxP7K1Td/9YtB5a3fm1wM1SOjXqcvx7w7WLUgZUeAwrH9nhcOFTlqR1uq2vb5NldLqfalAPUioYzByp8cmiQBd+y6FsGnE5DMggo41WHkbLh0jNVXh0r4jXft4hV3tlXpuKme8g1QmTh6IjHc8MF1pNOQ9IJCNxoWACGPMPpAxU+OzjIwQddsHqHSMEITw45qRCb4gicmw44+YePphxlehCKcHE25M3xEoOu4Brh6KMeR0Y8JldivpwLubIcM+9bpEu0z/qWs9M+NmNdOgFVlgLLB1fXeffxMqa5WQQmai4TNZdElXoMlS6JHFuIc9pd5vbj+8o8P1wgtFBK8bIjwgOFfOUAc76lYZWsfM6ohMI38xGjA4ZSSuT2I7/cjEmJvS4EBL5aiLgwE96TcoCLcxF51SyzFwQKr/1U59S1dVZCe1fKr9cTvl+Kc6tpdjOSjeB5rOpwK+p/aEpUee83n24+zO2GvlW++yditNx/05xcifl4JujaS/KRRfhwyuf1n+v81UiIbG+eWAosr0zWuZ10X9vVtESEc38GHL58m4+mArpRWA03lF+tJz110s46oOAZcABX4OGiYWKnwxvjJSZ2upmYqvD7WsJLP65xZTW/g+YTAIZc4e29ZV54pMBwSRgqyJ1qmCZ+opyd8nn/ms9sYHtWDjnzgFjliR0OL44VefqhAqMDhooLRoTYKquRMr1m+Xoh5NOZkL/XLZj+i1YmAaA5FSmeCDVPqLiCEYitcitSViNI0L4sbpe2I2ir2bJxCYH5QCFstuJNhc3vLdvaR7mWZwWVlu9tWdCLJUJLKmT5L/1gO970PhVL2z0Ls8/nLf8v2CbwL9vnKdmZSeI3AAAAAElFTkSuQmCC"
 
 /***/ },
-/* 245 */
+/* 252 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADYUlEQVRYhe2XTWxUVRiGn+/cOzMVIpIosdpOExhtMSaKtcSI1iglzLAwqGHhwsRoomJc68LEmrjThQYXgG6MP4ndiIlVU2T4CQVD/Ck2pXZKW9N0GAeGhNAWLPfvHBczaJTb4c50km54dzf33vM+55z3fOccueXpPZddsVawDIqbANsVC0fZy+EPGtTyOP+rGwBVJ98YA9oszUEJIlIHgDasu3UlPQ+0kIhZdXm7vubwbwUmz18CFQ4RCmCMIXXbSvp706xvWV2X+VVNnZ3jyXf2kyvNh45E+AhoQ8+G1prNF1yfH8fOERhI2IqNd68h1byKTFcbuW9PgRUVAIjHas/nkZEi23u/h4SNHWj2vZ0h05kkEVMYIGwSGlqBrngBnhKUpdCm/AxQLcYNBRAAx0eLoHyNhPa5AQCur/nh1zzZoTxGwxOdLWzb2MaWDS18/uZWfG1YEbPouf/OxgN4vuatT06wq38UtxKqvQNj7Mys571XNvHc43fV1N51kzZdmueDfcOMFy4CsP9knl39o3gJG7EtxLbwm2z2DOT45sQ0AFPn5nj/q2Emi7NLB8gVZnl973FKcw4A2V/yuCFFxbcVAz/NAHBh3uWNj44zMn1h6QBKBIlbxCrDbapEWldeWkqQmIVapPrVBFCWMJYvT8HmzlZiIfuD5Qeku9oAmPjzIjpawxEBYoovDp5mwfXZ1pXk1fQ9WI6H8TXG11iOz4ub23lq01ocL+Cz7GkkHm3/iLQKRIRj4yX6Bv/ghZ523n35YR697w4Gfp5Ba0h3Jdn+yFqaYhZ9g1McOlUkvO7VCQDgCby2exABnu1ex47uFDu6U/+8d7yAvqOTvPThURyiHzQiA4gIVxB27j7Gl0cmeH5LBx3J1QjCRGGWT7PjHB4t4lS+rV6AawCIWwpbG7TRCOADB0eKZE+eQVU8NCAxC0QqPTdYgSZuXz8HiwJ4fjnHD7Wv4eveDAueH3FWK+C2xWP3NgPl0r3Yv+EASjg0XGDq7Byp5lWkO1trsP6vZs5f4sBQftETkdz0zMeXHWVfezHRho7bb2brg0maIi6p/8v1Ag4MneH34iyoa2OZ0H6VDCghV5on991oxDiFS5QgIeZXVTWEIgJWlF29fi37veAGgB03wV+Rt64GK24C/gZkny/Ojhh/mAAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 246 */
+/* 253 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEWklEQVRYhcWXW4hVVRjHf2utPXPOnNvMOE4NNFGNJGEZFiQZkXabUioSyyiCAulCL10RInoxRKGHsJdIeqmn8CXIhOg2WExljjqhTqIjaelMNtM46sy57b3X6mGf4+yzbzMjgn/Yh7PX933ru67vW1ucev5BwxWEvJLKASz/iz8UIvBOgBbkn6uc8cmDLwJBoSBjkFbnD/LEGRVHk0Em/4ZzKY4kniQH6rCCi5ejIuuhDkYxyiArYi0MY2aekDYx8/ihXRAS41sP1liiAReLyXWQ2TypJbch862B5Av05ASlwV9D0i3LV1He/zNoNzGqsQYYAGPIr3mK1K3LKf22G7Wgk9x9jyJzBarH/6B04BdKAz8RCrYUFNY+R+XQAKZcSlCflALXJf/IM+R6H2ds8+s4/54GY6gc3kfHq5uwurqpDB1AT11ACBHwUmCMbjgtcYhtRKqzi9zqJ6ieOIozNoqQCqEsKkODTPftQmbz5HrXgmNjjEFYFjLdgky3INItCCGRqZaZNaUiaygmAgZr4dXIlkxNyGDqIVaK0v5+8mvWY3V1exSjya5cQ+ae1TX/BVZnFwvf3AK1SEx//yXTfTtBNaqMMUCgpy9gXJem7h5kJocuFWukGs0YnH9OIxAgFVN9X1H88WuvGqSi890PGXt/I6Zc8gradUCquafAGT2FfXIY1XEVmbseAMfxCNql+bpFmGqZqW+/AKvmg9Zou4qpPxio/dd2FaN1+KgS6IQNXdB1OLt9K87ISVrXv0D2/sdQhXaaFy0h17uOiY82Ux0eitwUjBcZ396N8Z1B7DBCCJzxM4xteYP0LXfQ1LOYjlXvYXVdy+Sn2ygP7gEZHUBjDMX+bzCOHd6XxkMroxb9RujiNMU9fZzf8QlCWYjmFDKbr3XGSP1gDBd2fY6x7RiGGTSkIHI/rb1upl0qw4cRUlJ4cgOZu3vB6IuyIduliklPTApCyrVGFdrJrFxNc89N6KnzmEqZ8sG9NC9eSvuGt2i65nrO7diOiajuqL7vH3jJs0Brmhctof3FjVSPHWbys224E+Ne2IUgdfPtLHjpbXIPr6O0dzfVE8divY10zofIKpLZPB2vbUIXpzj78Vbcc2dBKe/IKUVl6ADjH7yDqVZJL1vhpekSETZAu6SXrUAV2qgePRTtmZQ4I3/jTo4jmpoaSLPN/9kNMBd/SC1e6nke6uEG2dqOzBSoHPm9wUjTwHUpBkhJaV8/9l/HabrhRlqffhmRSntHyrbBsZGZHG3PvkLlyCDlgwOx/WAuEPXvAv89wxgQqRS5h9aRufNeUBbOqT8xlTKy0I7MZJnu/47iDzu9ljtfpUkGNMB1Eek0qm0hstDmNaap87j/ncGUy95wCSQ66QYcxZd8J1QKY9s4Y6MwNtIoqlSkwvnGY/Y7YcNKGJdyi478MAlNwwShy4nYL6PZMF+D4pyzohj8eU1qLFEDLOr7L+lyGqqB+XayyEk4B546/gdYh7SrP6iz2QAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 247 */
+/* 254 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVRYhe2XS4vTUBTHfydJH6lTO4yOlIHRjeBCERxwp650oW5UEBFBEMSlCC78BF34BQT9AuMHEN3O2oWC4AtEF0rVUqmdvpKY5LhITWtRSDJTy8ic3U24Ob/zv/c8IseuPFBmaMYsnW8DbAMAWBvZHIQhc3ae6u4ytm0RhkqrPeBLs4uITBdAVblw8iCXTh9icWEHphmJ+exVndt3nyT+TiaAIAi5eu4INy4exTB+j1QQVCGhANkASnaey2cPx85VlU7PJVToDbxU30oNoKosVytU5orx+t7qUx4+foEgIJo4+kwAAPncKHmCUHnzvoEqIApK4guYGkA1ahuTzSNyqAxfTwdAVakulimX8ixXKyPnwNKenXR60dm73g8+fm4nvoWJAYJQuXZ+hTMnDjCugWka3Ll+fIgCz1/XuVl7RFIN0t2BOL0mUm8sWsfzUdXpFCLPD+j2PQxDKBVzEZMqjusThJEqna4b34UkJkkHElVloWJjF3Ps37uL2q1TQFSUavfXePmuAYDj+nz73t98BUSE1rpDqz1gvlwcgQHNVp/61058MmmyIHU3/JtcWee6mbfjrQlgmKNtAhjDSvjPAAqWOVoImFaK7rMZAJO2kR+LTADjWSbI8AiyWeJCFJsqhYLFvqX5OPRPjXV6fS9V/v+y9POACI7r8/ZDc+JxNhUyDSRZnf3JtmYd+K8AfgL5Xa3HUywSZAAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 248 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
