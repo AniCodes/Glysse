@@ -62,35 +62,35 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _home = __webpack_require__(228);
+	var _home = __webpack_require__(239);
 
 	var _home2 = _interopRequireDefault(_home);
 
-	var _product = __webpack_require__(229);
+	var _product = __webpack_require__(240);
 
 	var _product2 = _interopRequireDefault(_product);
 
-	var _prodindex = __webpack_require__(231);
+	var _prodindex = __webpack_require__(242);
 
 	var _prodindex2 = _interopRequireDefault(_prodindex);
 
-	var _productitems = __webpack_require__(239);
+	var _productitems = __webpack_require__(250);
 
 	var _productitems2 = _interopRequireDefault(_productitems);
 
-	var _item = __webpack_require__(240);
+	var _item = __webpack_require__(251);
 
 	var _item2 = _interopRequireDefault(_item);
 
-	var _about = __webpack_require__(241);
+	var _about = __webpack_require__(252);
 
 	var _about2 = _interopRequireDefault(_about);
 
-	var _contact = __webpack_require__(242);
+	var _contact = __webpack_require__(253);
 
 	var _contact2 = _interopRequireDefault(_contact);
 
-	__webpack_require__(243);
+	__webpack_require__(254);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26405,6 +26405,10 @@
 
 	var _reactRouter = __webpack_require__(172);
 
+	var _Login = __webpack_require__(228);
+
+	var _Login2 = _interopRequireDefault(_Login);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var App = _react2.default.createClass({
@@ -26459,7 +26463,8 @@
 	                'Contacts'
 	              )
 	            )
-	          )
+	          ),
+	          _react2.default.createElement(_Login2.default, { className: 'login' })
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -26477,6 +26482,1437 @@
 
 /***/ },
 /* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactModal = __webpack_require__(229);
+
+	var _reactModal2 = _interopRequireDefault(_reactModal);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var btnStyles = {
+	  position: 'absolute',
+	  top: '20px',
+	  right: '10%',
+	  background: 'transparent',
+	  color: 'white',
+	  border: '0',
+	  cursor: 'pointer',
+	  fontSize: '16px',
+	  fontWeight: '600'
+	};
+
+	var Login = _react2.default.createClass({
+	  displayName: 'Login',
+
+
+	  getInitialState: function getInitialState() {
+	    return { modalIsOpen: false };
+	  },
+
+	  openModal: function openModal() {
+	    this.setState({ modalIsOpen: true });
+	  },
+
+	  closeModal: function closeModal() {
+	    this.setState({ modalIsOpen: false });
+	  },
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'button',
+	        { className: 'btn-login', onClick: this.openModal },
+	        'Login'
+	      ),
+	      _react2.default.createElement(
+	        _reactModal2.default,
+	        {
+	          className: 'modal',
+	          overlayClassName: 'overlay',
+	          isOpen: this.state.modalIsOpen,
+	          onAfterOpen: this.afterOpenModal,
+	          onRequestClose: this.closeModal,
+	          contentLabel: 'Login'
+	        },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Hello!'
+	        ),
+	        _react2.default.createElement('button', { className: 'btn-close', onClick: this.closeModal }),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          'Please type form'
+	        ),
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          _react2.default.createElement('input', { type: 'email', placeholder: 'Your E-mail', required: true }),
+	          _react2.default.createElement('input', { type: 'password', placeholder: 'Your Password', required: true }),
+	          _react2.default.createElement(
+	            'button',
+	            { type: 'submit' },
+	            'Login'
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            null,
+	            'Registration'
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports.default = Login;
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "Login.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(230);
+
+
+
+/***/ },
+/* 230 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(34);
+	var ExecutionEnvironment = __webpack_require__(231);
+	var ModalPortal = React.createFactory(__webpack_require__(232));
+	var ariaAppHider = __webpack_require__(237);
+	var elementClass = __webpack_require__(238);
+	var renderSubtreeIntoContainer = __webpack_require__(34).unstable_renderSubtreeIntoContainer;
+	var Assign = __webpack_require__(236);
+
+	var SafeHTMLElement = ExecutionEnvironment.canUseDOM ? window.HTMLElement : {};
+	var AppElement = ExecutionEnvironment.canUseDOM ? document.body : {appendChild: function() {}};
+
+	function getParentElement(parentSelector) {
+	  return parentSelector();
+	}
+
+	var Modal = React.createClass({
+
+	  displayName: 'Modal',
+	  statics: {
+	    setAppElement: function(element) {
+	        AppElement = ariaAppHider.setElement(element);
+	    },
+	    injectCSS: function() {
+	      "production" !== process.env.NODE_ENV
+	        && console.warn('React-Modal: injectCSS has been deprecated ' +
+	                        'and no longer has any effect. It will be removed in a later version');
+	    }
+	  },
+
+	  propTypes: {
+	    isOpen: React.PropTypes.bool.isRequired,
+	    style: React.PropTypes.shape({
+	      content: React.PropTypes.object,
+	      overlay: React.PropTypes.object
+	    }),
+	    portalClassName: React.PropTypes.string,
+	    appElement: React.PropTypes.instanceOf(SafeHTMLElement),
+	    onAfterOpen: React.PropTypes.func,
+	    onRequestClose: React.PropTypes.func,
+	    closeTimeoutMS: React.PropTypes.number,
+	    ariaHideApp: React.PropTypes.bool,
+	    shouldCloseOnOverlayClick: React.PropTypes.bool,
+	    parentSelector: React.PropTypes.func,
+	    role: React.PropTypes.string,
+	    contentLabel: React.PropTypes.string.isRequired
+	  },
+
+	  getDefaultProps: function () {
+	    return {
+	      isOpen: false,
+	      portalClassName: 'ReactModalPortal',
+	      ariaHideApp: true,
+	      closeTimeoutMS: 0,
+	      shouldCloseOnOverlayClick: true,
+	      parentSelector: function () { return document.body; }
+	    };
+	  },
+
+	  componentDidMount: function() {
+	    this.node = document.createElement('div');
+	    this.node.className = this.props.portalClassName;
+
+	    var parent = getParentElement(this.props.parentSelector);
+	    parent.appendChild(this.node);
+	    this.renderPortal(this.props);
+	  },
+
+	  componentWillReceiveProps: function(newProps) {
+	    var currentParent = getParentElement(this.props.parentSelector);
+	    var newParent = getParentElement(newProps.parentSelector);
+
+	    if(newParent !== currentParent) {
+	      currentParent.removeChild(this.node);
+	      newParent.appendChild(this.node);
+	    }
+
+	    this.renderPortal(newProps);
+	  },
+
+	  componentWillUnmount: function() {
+	    if (this.props.ariaHideApp) {
+	      ariaAppHider.show(this.props.appElement);
+	    }
+
+	    ReactDOM.unmountComponentAtNode(this.node);
+	    var parent = getParentElement(this.props.parentSelector);
+	    parent.removeChild(this.node);
+	    elementClass(document.body).remove('ReactModal__Body--open');
+	  },
+
+	  renderPortal: function(props) {
+	    if (props.isOpen) {
+	      elementClass(document.body).add('ReactModal__Body--open');
+	    } else {
+	      elementClass(document.body).remove('ReactModal__Body--open');
+	    }
+
+	    if (props.ariaHideApp) {
+	      ariaAppHider.toggle(props.isOpen, props.appElement);
+	    }
+
+	    this.portal = renderSubtreeIntoContainer(this, ModalPortal(Assign({}, props, {defaultStyles: Modal.defaultStyles})), this.node);
+	  },
+
+	  render: function () {
+	    return React.DOM.noscript();
+	  }
+	});
+
+	Modal.defaultStyles = {
+	  overlay: {
+	    position        : 'fixed',
+	    top             : 0,
+	    left            : 0,
+	    right           : 0,
+	    bottom          : 0,
+	    backgroundColor : 'rgba(255, 255, 255, 0.75)'
+	  },
+	  content: {
+	    position                : 'absolute',
+	    top                     : '40px',
+	    left                    : '40px',
+	    right                   : '40px',
+	    bottom                  : '40px',
+	    border                  : '1px solid #ccc',
+	    background              : '#fff',
+	    overflow                : 'auto',
+	    WebkitOverflowScrolling : 'touch',
+	    borderRadius            : '4px',
+	    outline                 : 'none',
+	    padding                 : '20px'
+	  }
+	}
+
+	module.exports = Modal
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2015 Jed Watson.
+	  Based on code that is Copyright 2013-2015, Facebook, Inc.
+	  All rights reserved.
+	*/
+
+	(function () {
+		'use strict';
+
+		var canUseDOM = !!(
+			typeof window !== 'undefined' &&
+			window.document &&
+			window.document.createElement
+		);
+
+		var ExecutionEnvironment = {
+
+			canUseDOM: canUseDOM,
+
+			canUseWorkers: typeof Worker !== 'undefined',
+
+			canUseEventListeners:
+				canUseDOM && !!(window.addEventListener || window.attachEvent),
+
+			canUseViewport: canUseDOM && !!window.screen
+
+		};
+
+		if (true) {
+			!(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return ExecutionEnvironment;
+			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else if (typeof module !== 'undefined' && module.exports) {
+			module.exports = ExecutionEnvironment;
+		} else {
+			window.ExecutionEnvironment = ExecutionEnvironment;
+		}
+
+	}());
+
+
+/***/ },
+/* 232 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var div = React.DOM.div;
+	var focusManager = __webpack_require__(233);
+	var scopeTab = __webpack_require__(235);
+	var Assign = __webpack_require__(236);
+
+	// so that our CSS is statically analyzable
+	var CLASS_NAMES = {
+	  overlay: {
+	    base: 'ReactModal__Overlay',
+	    afterOpen: 'ReactModal__Overlay--after-open',
+	    beforeClose: 'ReactModal__Overlay--before-close'
+	  },
+	  content: {
+	    base: 'ReactModal__Content',
+	    afterOpen: 'ReactModal__Content--after-open',
+	    beforeClose: 'ReactModal__Content--before-close'
+	  }
+	};
+
+	var ModalPortal = module.exports = React.createClass({
+
+	  displayName: 'ModalPortal',
+	  shouldClose: null,
+
+	  getDefaultProps: function() {
+	    return {
+	      style: {
+	        overlay: {},
+	        content: {}
+	      }
+	    };
+	  },
+
+	  getInitialState: function() {
+	    return {
+	      afterOpen: false,
+	      beforeClose: false
+	    };
+	  },
+
+	  componentDidMount: function() {
+	    // Focus needs to be set when mounting and already open
+	    if (this.props.isOpen) {
+	      this.setFocusAfterRender(true);
+	      this.open();
+	    }
+	  },
+
+	  componentWillUnmount: function() {
+	    clearTimeout(this.closeTimer);
+	  },
+
+	  componentWillReceiveProps: function(newProps) {
+	    // Focus only needs to be set once when the modal is being opened
+	    if (!this.props.isOpen && newProps.isOpen) {
+	      this.setFocusAfterRender(true);
+	      this.open();
+	    } else if (this.props.isOpen && !newProps.isOpen) {
+	      this.close();
+	    }
+	  },
+
+	  componentDidUpdate: function () {
+	    if (this.focusAfterRender) {
+	      this.focusContent();
+	      this.setFocusAfterRender(false);
+	    }
+	  },
+
+	  setFocusAfterRender: function (focus) {
+	    this.focusAfterRender = focus;
+	  },
+
+	  open: function() {
+	    if (this.state.afterOpen && this.state.beforeClose) {
+	      clearTimeout(this.closeTimer);
+	      this.setState({ beforeClose: false });
+	    } else {
+	      focusManager.setupScopedFocus(this.node);
+	      focusManager.markForFocusLater();
+	      this.setState({isOpen: true}, function() {
+	        this.setState({afterOpen: true});
+
+	        if (this.props.isOpen && this.props.onAfterOpen) {
+	          this.props.onAfterOpen();
+	        }
+	      }.bind(this));
+	    }
+	  },
+
+	  close: function() {
+	    if (!this.ownerHandlesClose())
+	      return;
+	    if (this.props.closeTimeoutMS > 0)
+	      this.closeWithTimeout();
+	    else
+	      this.closeWithoutTimeout();
+	  },
+
+	  focusContent: function() {
+	    // Don't steal focus from inner elements
+	    if (!this.contentHasFocus()) {
+	      this.refs.content.focus();
+	    }
+	  },
+
+	  closeWithTimeout: function() {
+	    this.setState({beforeClose: true}, function() {
+	      this.closeTimer = setTimeout(this.closeWithoutTimeout, this.props.closeTimeoutMS);
+	    }.bind(this));
+	  },
+
+	  closeWithoutTimeout: function() {
+	    this.setState({
+	      beforeClose: false,
+	      isOpen: false,
+	      afterOpen: false,
+	    }, this.afterClose);
+	  },
+
+	  afterClose: function() {
+	    focusManager.returnFocus();
+	    focusManager.teardownScopedFocus();
+	  },
+
+	  handleKeyDown: function(event) {
+	    if (event.keyCode == 9 /*tab*/) scopeTab(this.refs.content, event);
+	    if (event.keyCode == 27 /*esc*/) {
+	      event.preventDefault();
+	      this.requestClose(event);
+	    }
+	  },
+
+	  handleOverlayMouseDown: function(event) {
+	    if (this.shouldClose === null) {
+	      this.shouldClose = true;
+	    }
+	  },
+
+	  handleOverlayMouseUp: function(event) {
+	    if (this.shouldClose && this.props.shouldCloseOnOverlayClick) {
+	      if (this.ownerHandlesClose())
+	        this.requestClose(event);
+	      else
+	        this.focusContent();
+	    }
+	    this.shouldClose = null;
+	  },
+
+	  handleContentMouseDown: function(event) {
+	    this.shouldClose = false;
+	  },
+
+	  handleContentMouseUp: function(event) {
+	    this.shouldClose = false;
+	  },
+
+	  requestClose: function(event) {
+	    if (this.ownerHandlesClose())
+	      this.props.onRequestClose(event);
+	  },
+
+	  ownerHandlesClose: function() {
+	    return this.props.onRequestClose;
+	  },
+
+	  shouldBeClosed: function() {
+	    return !this.props.isOpen && !this.state.beforeClose;
+	  },
+
+	  contentHasFocus: function() {
+	    return document.activeElement === this.refs.content || this.refs.content.contains(document.activeElement);
+	  },
+
+	  buildClassName: function(which, additional) {
+	    var className = CLASS_NAMES[which].base;
+	    if (this.state.afterOpen)
+	      className += ' '+CLASS_NAMES[which].afterOpen;
+	    if (this.state.beforeClose)
+	      className += ' '+CLASS_NAMES[which].beforeClose;
+	    return additional ? className + ' ' + additional : className;
+	  },
+
+	  render: function() {
+	    var contentStyles = (this.props.className) ? {} : this.props.defaultStyles.content;
+	    var overlayStyles = (this.props.overlayClassName) ? {} : this.props.defaultStyles.overlay;
+
+	    return this.shouldBeClosed() ? div() : (
+	      div({
+	        ref: "overlay",
+	        className: this.buildClassName('overlay', this.props.overlayClassName),
+	        style: Assign({}, overlayStyles, this.props.style.overlay || {}),
+	        onMouseDown: this.handleOverlayMouseDown,
+	        onMouseUp: this.handleOverlayMouseUp
+	      },
+	        div({
+	          ref: "content",
+	          style: Assign({}, contentStyles, this.props.style.content || {}),
+	          className: this.buildClassName('content', this.props.className),
+	          tabIndex: "-1",
+	          onKeyDown: this.handleKeyDown,
+	          onMouseDown: this.handleContentMouseDown,
+	          onMouseUp: this.handleContentMouseUp,
+	          role: this.props.role,
+	          "aria-label": this.props.contentLabel
+	        },
+	          this.props.children
+	        )
+	      )
+	    );
+	  }
+	});
+
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var findTabbable = __webpack_require__(234);
+	var modalElement = null;
+	var focusLaterElement = null;
+	var needToFocus = false;
+
+	function handleBlur(event) {
+	  needToFocus = true;
+	}
+
+	function handleFocus(event) {
+	  if (needToFocus) {
+	    needToFocus = false;
+	    if (!modalElement) {
+	      return;
+	    }
+	    // need to see how jQuery shims document.on('focusin') so we don't need the
+	    // setTimeout, firefox doesn't support focusin, if it did, we could focus
+	    // the element outside of a setTimeout. Side-effect of this implementation 
+	    // is that the document.body gets focus, and then we focus our element right 
+	    // after, seems fine.
+	    setTimeout(function() {
+	      if (modalElement.contains(document.activeElement))
+	        return;
+	      var el = (findTabbable(modalElement)[0] || modalElement);
+	      el.focus();
+	    }, 0);
+	  }
+	}
+
+	exports.markForFocusLater = function() {
+	  focusLaterElement = document.activeElement;
+	};
+
+	exports.returnFocus = function() {
+	  try {
+	    focusLaterElement.focus();
+	  }
+	  catch (e) {
+	    console.warn('You tried to return focus to '+focusLaterElement+' but it is not in the DOM anymore');
+	  }
+	  focusLaterElement = null;
+	};
+
+	exports.setupScopedFocus = function(element) {
+	  modalElement = element;
+
+	  if (window.addEventListener) {
+	    window.addEventListener('blur', handleBlur, false);
+	    document.addEventListener('focus', handleFocus, true);
+	  } else {
+	    window.attachEvent('onBlur', handleBlur);
+	    document.attachEvent('onFocus', handleFocus);
+	  }
+	};
+
+	exports.teardownScopedFocus = function() {
+	  modalElement = null;
+
+	  if (window.addEventListener) {
+	    window.removeEventListener('blur', handleBlur);
+	    document.removeEventListener('focus', handleFocus);
+	  } else {
+	    window.detachEvent('onBlur', handleBlur);
+	    document.detachEvent('onFocus', handleFocus);
+	  }
+	};
+
+
+
+
+/***/ },
+/* 234 */
+/***/ function(module, exports) {
+
+	/*!
+	 * Adapted from jQuery UI core
+	 *
+	 * http://jqueryui.com
+	 *
+	 * Copyright 2014 jQuery Foundation and other contributors
+	 * Released under the MIT license.
+	 * http://jquery.org/license
+	 *
+	 * http://api.jqueryui.com/category/ui-core/
+	 */
+
+	function focusable(element, isTabIndexNotNaN) {
+	  var nodeName = element.nodeName.toLowerCase();
+	  return (/input|select|textarea|button|object/.test(nodeName) ?
+	    !element.disabled :
+	    "a" === nodeName ?
+	      element.href || isTabIndexNotNaN :
+	      isTabIndexNotNaN) && visible(element);
+	}
+
+	function hidden(el) {
+	  return (el.offsetWidth <= 0 && el.offsetHeight <= 0) ||
+	    el.style.display === 'none';
+	}
+
+	function visible(element) {
+	  while (element) {
+	    if (element === document.body) break;
+	    if (hidden(element)) return false;
+	    element = element.parentNode;
+	  }
+	  return true;
+	}
+
+	function tabbable(element) {
+	  var tabIndex = element.getAttribute('tabindex');
+	  if (tabIndex === null) tabIndex = undefined;
+	  var isTabIndexNaN = isNaN(tabIndex);
+	  return (isTabIndexNaN || tabIndex >= 0) && focusable(element, !isTabIndexNaN);
+	}
+
+	function findTabbableDescendants(element) {
+	  return [].slice.call(element.querySelectorAll('*'), 0).filter(function(el) {
+	    return tabbable(el);
+	  });
+	}
+
+	module.exports = findTabbableDescendants;
+
+
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var findTabbable = __webpack_require__(234);
+
+	module.exports = function(node, event) {
+	  var tabbable = findTabbable(node);
+	  if (!tabbable.length) {
+	      event.preventDefault();
+	      return;
+	  }
+	  var finalTabbable = tabbable[event.shiftKey ? 0 : tabbable.length - 1];
+	  var leavingFinalTabbable = (
+	    finalTabbable === document.activeElement ||
+	    // handle immediate shift+tab after opening with mouse
+	    node === document.activeElement
+	  );
+	  if (!leavingFinalTabbable) return;
+	  event.preventDefault();
+	  var target = tabbable[event.shiftKey ? tabbable.length - 1 : 0];
+	  target.focus();
+	};
+
+
+/***/ },
+/* 236 */
+/***/ function(module, exports) {
+
+	/**
+	 * lodash (Custom Build) <https://lodash.com/>
+	 * Build: `lodash modularize exports="npm" -o ./`
+	 * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+	 * Released under MIT license <https://lodash.com/license>
+	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+	 * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 */
+
+	/** Used as references for various `Number` constants. */
+	var MAX_SAFE_INTEGER = 9007199254740991;
+
+	/** `Object#toString` result references. */
+	var argsTag = '[object Arguments]',
+	    funcTag = '[object Function]',
+	    genTag = '[object GeneratorFunction]';
+
+	/** Used to detect unsigned integer values. */
+	var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+	/**
+	 * A faster alternative to `Function#apply`, this function invokes `func`
+	 * with the `this` binding of `thisArg` and the arguments of `args`.
+	 *
+	 * @private
+	 * @param {Function} func The function to invoke.
+	 * @param {*} thisArg The `this` binding of `func`.
+	 * @param {Array} args The arguments to invoke `func` with.
+	 * @returns {*} Returns the result of `func`.
+	 */
+	function apply(func, thisArg, args) {
+	  switch (args.length) {
+	    case 0: return func.call(thisArg);
+	    case 1: return func.call(thisArg, args[0]);
+	    case 2: return func.call(thisArg, args[0], args[1]);
+	    case 3: return func.call(thisArg, args[0], args[1], args[2]);
+	  }
+	  return func.apply(thisArg, args);
+	}
+
+	/**
+	 * The base implementation of `_.times` without support for iteratee shorthands
+	 * or max array length checks.
+	 *
+	 * @private
+	 * @param {number} n The number of times to invoke `iteratee`.
+	 * @param {Function} iteratee The function invoked per iteration.
+	 * @returns {Array} Returns the array of results.
+	 */
+	function baseTimes(n, iteratee) {
+	  var index = -1,
+	      result = Array(n);
+
+	  while (++index < n) {
+	    result[index] = iteratee(index);
+	  }
+	  return result;
+	}
+
+	/**
+	 * Creates a unary function that invokes `func` with its argument transformed.
+	 *
+	 * @private
+	 * @param {Function} func The function to wrap.
+	 * @param {Function} transform The argument transform.
+	 * @returns {Function} Returns the new function.
+	 */
+	function overArg(func, transform) {
+	  return function(arg) {
+	    return func(transform(arg));
+	  };
+	}
+
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+
+	/** Used to check objects for own properties. */
+	var hasOwnProperty = objectProto.hasOwnProperty;
+
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+
+	/** Built-in value references. */
+	var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeKeys = overArg(Object.keys, Object),
+	    nativeMax = Math.max;
+
+	/** Detect if properties shadowing those on `Object.prototype` are non-enumerable. */
+	var nonEnumShadows = !propertyIsEnumerable.call({ 'valueOf': 1 }, 'valueOf');
+
+	/**
+	 * Creates an array of the enumerable property names of the array-like `value`.
+	 *
+	 * @private
+	 * @param {*} value The value to query.
+	 * @param {boolean} inherited Specify returning inherited property names.
+	 * @returns {Array} Returns the array of property names.
+	 */
+	function arrayLikeKeys(value, inherited) {
+	  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+	  // Safari 9 makes `arguments.length` enumerable in strict mode.
+	  var result = (isArray(value) || isArguments(value))
+	    ? baseTimes(value.length, String)
+	    : [];
+
+	  var length = result.length,
+	      skipIndexes = !!length;
+
+	  for (var key in value) {
+	    if ((inherited || hasOwnProperty.call(value, key)) &&
+	        !(skipIndexes && (key == 'length' || isIndex(key, length)))) {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
+
+	/**
+	 * Assigns `value` to `key` of `object` if the existing value is not equivalent
+	 * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+	 * for equality comparisons.
+	 *
+	 * @private
+	 * @param {Object} object The object to modify.
+	 * @param {string} key The key of the property to assign.
+	 * @param {*} value The value to assign.
+	 */
+	function assignValue(object, key, value) {
+	  var objValue = object[key];
+	  if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+	      (value === undefined && !(key in object))) {
+	    object[key] = value;
+	  }
+	}
+
+	/**
+	 * The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
+	 *
+	 * @private
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 */
+	function baseKeys(object) {
+	  if (!isPrototype(object)) {
+	    return nativeKeys(object);
+	  }
+	  var result = [];
+	  for (var key in Object(object)) {
+	    if (hasOwnProperty.call(object, key) && key != 'constructor') {
+	      result.push(key);
+	    }
+	  }
+	  return result;
+	}
+
+	/**
+	 * The base implementation of `_.rest` which doesn't validate or coerce arguments.
+	 *
+	 * @private
+	 * @param {Function} func The function to apply a rest parameter to.
+	 * @param {number} [start=func.length-1] The start position of the rest parameter.
+	 * @returns {Function} Returns the new function.
+	 */
+	function baseRest(func, start) {
+	  start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+	  return function() {
+	    var args = arguments,
+	        index = -1,
+	        length = nativeMax(args.length - start, 0),
+	        array = Array(length);
+
+	    while (++index < length) {
+	      array[index] = args[start + index];
+	    }
+	    index = -1;
+	    var otherArgs = Array(start + 1);
+	    while (++index < start) {
+	      otherArgs[index] = args[index];
+	    }
+	    otherArgs[start] = array;
+	    return apply(func, this, otherArgs);
+	  };
+	}
+
+	/**
+	 * Copies properties of `source` to `object`.
+	 *
+	 * @private
+	 * @param {Object} source The object to copy properties from.
+	 * @param {Array} props The property identifiers to copy.
+	 * @param {Object} [object={}] The object to copy properties to.
+	 * @param {Function} [customizer] The function to customize copied values.
+	 * @returns {Object} Returns `object`.
+	 */
+	function copyObject(source, props, object, customizer) {
+	  object || (object = {});
+
+	  var index = -1,
+	      length = props.length;
+
+	  while (++index < length) {
+	    var key = props[index];
+
+	    var newValue = customizer
+	      ? customizer(object[key], source[key], key, object, source)
+	      : undefined;
+
+	    assignValue(object, key, newValue === undefined ? source[key] : newValue);
+	  }
+	  return object;
+	}
+
+	/**
+	 * Creates a function like `_.assign`.
+	 *
+	 * @private
+	 * @param {Function} assigner The function to assign values.
+	 * @returns {Function} Returns the new assigner function.
+	 */
+	function createAssigner(assigner) {
+	  return baseRest(function(object, sources) {
+	    var index = -1,
+	        length = sources.length,
+	        customizer = length > 1 ? sources[length - 1] : undefined,
+	        guard = length > 2 ? sources[2] : undefined;
+
+	    customizer = (assigner.length > 3 && typeof customizer == 'function')
+	      ? (length--, customizer)
+	      : undefined;
+
+	    if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+	      customizer = length < 3 ? undefined : customizer;
+	      length = 1;
+	    }
+	    object = Object(object);
+	    while (++index < length) {
+	      var source = sources[index];
+	      if (source) {
+	        assigner(object, source, index, customizer);
+	      }
+	    }
+	    return object;
+	  });
+	}
+
+	/**
+	 * Checks if `value` is a valid array-like index.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+	 * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+	 */
+	function isIndex(value, length) {
+	  length = length == null ? MAX_SAFE_INTEGER : length;
+	  return !!length &&
+	    (typeof value == 'number' || reIsUint.test(value)) &&
+	    (value > -1 && value % 1 == 0 && value < length);
+	}
+
+	/**
+	 * Checks if the given arguments are from an iteratee call.
+	 *
+	 * @private
+	 * @param {*} value The potential iteratee value argument.
+	 * @param {*} index The potential iteratee index or key argument.
+	 * @param {*} object The potential iteratee object argument.
+	 * @returns {boolean} Returns `true` if the arguments are from an iteratee call,
+	 *  else `false`.
+	 */
+	function isIterateeCall(value, index, object) {
+	  if (!isObject(object)) {
+	    return false;
+	  }
+	  var type = typeof index;
+	  if (type == 'number'
+	        ? (isArrayLike(object) && isIndex(index, object.length))
+	        : (type == 'string' && index in object)
+	      ) {
+	    return eq(object[index], value);
+	  }
+	  return false;
+	}
+
+	/**
+	 * Checks if `value` is likely a prototype object.
+	 *
+	 * @private
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+	 */
+	function isPrototype(value) {
+	  var Ctor = value && value.constructor,
+	      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+
+	  return value === proto;
+	}
+
+	/**
+	 * Performs a
+	 * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+	 * comparison between two values to determine if they are equivalent.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to compare.
+	 * @param {*} other The other value to compare.
+	 * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+	 * @example
+	 *
+	 * var object = { 'a': 1 };
+	 * var other = { 'a': 1 };
+	 *
+	 * _.eq(object, object);
+	 * // => true
+	 *
+	 * _.eq(object, other);
+	 * // => false
+	 *
+	 * _.eq('a', 'a');
+	 * // => true
+	 *
+	 * _.eq('a', Object('a'));
+	 * // => false
+	 *
+	 * _.eq(NaN, NaN);
+	 * // => true
+	 */
+	function eq(value, other) {
+	  return value === other || (value !== value && other !== other);
+	}
+
+	/**
+	 * Checks if `value` is likely an `arguments` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArguments(function() { return arguments; }());
+	 * // => true
+	 *
+	 * _.isArguments([1, 2, 3]);
+	 * // => false
+	 */
+	function isArguments(value) {
+	  // Safari 8.1 makes `arguments.callee` enumerable in strict mode.
+	  return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') &&
+	    (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+	}
+
+	/**
+	 * Checks if `value` is classified as an `Array` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+	 * @example
+	 *
+	 * _.isArray([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArray(document.body.children);
+	 * // => false
+	 *
+	 * _.isArray('abc');
+	 * // => false
+	 *
+	 * _.isArray(_.noop);
+	 * // => false
+	 */
+	var isArray = Array.isArray;
+
+	/**
+	 * Checks if `value` is array-like. A value is considered array-like if it's
+	 * not a function and has a `value.length` that's an integer greater than or
+	 * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+	 * @example
+	 *
+	 * _.isArrayLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLike(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLike('abc');
+	 * // => true
+	 *
+	 * _.isArrayLike(_.noop);
+	 * // => false
+	 */
+	function isArrayLike(value) {
+	  return value != null && isLength(value.length) && !isFunction(value);
+	}
+
+	/**
+	 * This method is like `_.isArrayLike` except that it also checks if `value`
+	 * is an object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an array-like object,
+	 *  else `false`.
+	 * @example
+	 *
+	 * _.isArrayLikeObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject(document.body.children);
+	 * // => true
+	 *
+	 * _.isArrayLikeObject('abc');
+	 * // => false
+	 *
+	 * _.isArrayLikeObject(_.noop);
+	 * // => false
+	 */
+	function isArrayLikeObject(value) {
+	  return isObjectLike(value) && isArrayLike(value);
+	}
+
+	/**
+	 * Checks if `value` is classified as a `Function` object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+	 * @example
+	 *
+	 * _.isFunction(_);
+	 * // => true
+	 *
+	 * _.isFunction(/abc/);
+	 * // => false
+	 */
+	function isFunction(value) {
+	  // The use of `Object#toString` avoids issues with the `typeof` operator
+	  // in Safari 8-9 which returns 'object' for typed array and other constructors.
+	  var tag = isObject(value) ? objectToString.call(value) : '';
+	  return tag == funcTag || tag == genTag;
+	}
+
+	/**
+	 * Checks if `value` is a valid array-like length.
+	 *
+	 * **Note:** This method is loosely based on
+	 * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+	 * @example
+	 *
+	 * _.isLength(3);
+	 * // => true
+	 *
+	 * _.isLength(Number.MIN_VALUE);
+	 * // => false
+	 *
+	 * _.isLength(Infinity);
+	 * // => false
+	 *
+	 * _.isLength('3');
+	 * // => false
+	 */
+	function isLength(value) {
+	  return typeof value == 'number' &&
+	    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+	}
+
+	/**
+	 * Checks if `value` is the
+	 * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(_.noop);
+	 * // => true
+	 *
+	 * _.isObject(null);
+	 * // => false
+	 */
+	function isObject(value) {
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+
+	/**
+	 * Checks if `value` is object-like. A value is object-like if it's not `null`
+	 * and has a `typeof` result of "object".
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 * @example
+	 *
+	 * _.isObjectLike({});
+	 * // => true
+	 *
+	 * _.isObjectLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObjectLike(_.noop);
+	 * // => false
+	 *
+	 * _.isObjectLike(null);
+	 * // => false
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+
+	/**
+	 * Assigns own enumerable string keyed properties of source objects to the
+	 * destination object. Source objects are applied from left to right.
+	 * Subsequent sources overwrite property assignments of previous sources.
+	 *
+	 * **Note:** This method mutates `object` and is loosely based on
+	 * [`Object.assign`](https://mdn.io/Object/assign).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.10.0
+	 * @category Object
+	 * @param {Object} object The destination object.
+	 * @param {...Object} [sources] The source objects.
+	 * @returns {Object} Returns `object`.
+	 * @see _.assignIn
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 * }
+	 *
+	 * function Bar() {
+	 *   this.c = 3;
+	 * }
+	 *
+	 * Foo.prototype.b = 2;
+	 * Bar.prototype.d = 4;
+	 *
+	 * _.assign({ 'a': 0 }, new Foo, new Bar);
+	 * // => { 'a': 1, 'c': 3 }
+	 */
+	var assign = createAssigner(function(object, source) {
+	  if (nonEnumShadows || isPrototype(source) || isArrayLike(source)) {
+	    copyObject(source, keys(source), object);
+	    return;
+	  }
+	  for (var key in source) {
+	    if (hasOwnProperty.call(source, key)) {
+	      assignValue(object, key, source[key]);
+	    }
+	  }
+	});
+
+	/**
+	 * Creates an array of the own enumerable property names of `object`.
+	 *
+	 * **Note:** Non-object values are coerced to objects. See the
+	 * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+	 * for more details.
+	 *
+	 * @static
+	 * @since 0.1.0
+	 * @memberOf _
+	 * @category Object
+	 * @param {Object} object The object to query.
+	 * @returns {Array} Returns the array of property names.
+	 * @example
+	 *
+	 * function Foo() {
+	 *   this.a = 1;
+	 *   this.b = 2;
+	 * }
+	 *
+	 * Foo.prototype.c = 3;
+	 *
+	 * _.keys(new Foo);
+	 * // => ['a', 'b'] (iteration order is not guaranteed)
+	 *
+	 * _.keys('hi');
+	 * // => ['0', '1']
+	 */
+	function keys(object) {
+	  return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+	}
+
+	module.exports = assign;
+
+
+/***/ },
+/* 237 */
+/***/ function(module, exports) {
+
+	var _element = typeof document !== 'undefined' ? document.body : null;
+
+	function setElement(element) {
+	  if (typeof element === 'string') {
+	    var el = document.querySelectorAll(element);
+	    element = 'length' in el ? el[0] : el;
+	  }
+	  _element = element || _element;
+	  return _element;
+	}
+
+	function hide(appElement) {
+	  validateElement(appElement);
+	  (appElement || _element).setAttribute('aria-hidden', 'true');
+	}
+
+	function show(appElement) {
+	  validateElement(appElement);
+	  (appElement || _element).removeAttribute('aria-hidden');
+	}
+
+	function toggle(shouldHide, appElement) {
+	  if (shouldHide)
+	    hide(appElement);
+	  else
+	    show(appElement);
+	}
+
+	function validateElement(appElement) {
+	  if (!appElement && !_element)
+	    throw new Error('react-modal: You must set an element with `Modal.setAppElement(el)` to make this accessible');
+	}
+
+	function resetForTesting() {
+	  _element = document.body;
+	}
+
+	exports.toggle = toggle;
+	exports.setElement = setElement;
+	exports.show = show;
+	exports.hide = hide;
+	exports.resetForTesting = resetForTesting;
+
+
+/***/ },
+/* 238 */
+/***/ function(module, exports) {
+
+	module.exports = function(opts) {
+	  return new ElementClass(opts)
+	}
+
+	function indexOf(arr, prop) {
+	  if (arr.indexOf) return arr.indexOf(prop)
+	  for (var i = 0, len = arr.length; i < len; i++)
+	    if (arr[i] === prop) return i
+	  return -1
+	}
+
+	function ElementClass(opts) {
+	  if (!(this instanceof ElementClass)) return new ElementClass(opts)
+	  var self = this
+	  if (!opts) opts = {}
+
+	  // similar doing instanceof HTMLElement but works in IE8
+	  if (opts.nodeType) opts = {el: opts}
+
+	  this.opts = opts
+	  this.el = opts.el || document.body
+	  if (typeof this.el !== 'object') this.el = document.querySelector(this.el)
+	}
+
+	ElementClass.prototype.add = function(className) {
+	  var el = this.el
+	  if (!el) return
+	  if (el.className === "") return el.className = className
+	  var classes = el.className.split(' ')
+	  if (indexOf(classes, className) > -1) return classes
+	  classes.push(className)
+	  el.className = classes.join(' ')
+	  return classes
+	}
+
+	ElementClass.prototype.remove = function(className) {
+	  var el = this.el
+	  if (!el) return
+	  if (el.className === "") return
+	  var classes = el.className.split(' ')
+	  var idx = indexOf(classes, className)
+	  if (idx > -1) classes.splice(idx, 1)
+	  el.className = classes.join(' ')
+	  return classes
+	}
+
+	ElementClass.prototype.has = function(className) {
+	  var el = this.el
+	  if (!el) return
+	  var classes = el.className.split(' ')
+	  return indexOf(classes, className) > -1
+	}
+
+	ElementClass.prototype.toggle = function(className) {
+	  var el = this.el
+	  if (!el) return
+	  if (this.has(className)) this.remove(className)
+	  else this.add(className)
+	}
+
+
+/***/ },
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26630,7 +28066,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "home.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 229 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26647,7 +28083,7 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _data = __webpack_require__(230);
+	var _data = __webpack_require__(241);
 
 	var _data2 = _interopRequireDefault(_data);
 
@@ -26715,7 +28151,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "product.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 230 */
+/* 241 */
 /***/ function(module, exports) {
 
 	module.exports = [
@@ -26913,7 +28349,7 @@
 	];
 
 /***/ },
-/* 231 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -26928,7 +28364,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(232);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(243);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
@@ -27018,13 +28454,13 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "prodindex.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 232 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(233);
+	module.exports = __webpack_require__(244);
 
 /***/ },
-/* 233 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27044,8 +28480,8 @@
 
 	var React = __webpack_require__(2);
 
-	var ReactTransitionGroup = __webpack_require__(234);
-	var ReactCSSTransitionGroupChild = __webpack_require__(236);
+	var ReactTransitionGroup = __webpack_require__(245);
+	var ReactCSSTransitionGroupChild = __webpack_require__(247);
 
 	function createTransitionTimeoutPropValidator(transitionType) {
 	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
@@ -27116,7 +28552,7 @@
 	module.exports = ReactCSSTransitionGroup;
 
 /***/ },
-/* 234 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27136,7 +28572,7 @@
 
 	var React = __webpack_require__(2);
 	var ReactInstanceMap = __webpack_require__(119);
-	var ReactTransitionChildMapping = __webpack_require__(235);
+	var ReactTransitionChildMapping = __webpack_require__(246);
 
 	var emptyFunction = __webpack_require__(12);
 
@@ -27368,7 +28804,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 235 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27477,7 +28913,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 236 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27496,8 +28932,8 @@
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(35);
 
-	var CSSCore = __webpack_require__(237);
-	var ReactTransitionEvents = __webpack_require__(238);
+	var CSSCore = __webpack_require__(248);
+	var ReactTransitionEvents = __webpack_require__(249);
 
 	var onlyChild = __webpack_require__(33);
 
@@ -27649,7 +29085,7 @@
 	module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
-/* 237 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -27776,7 +29212,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 238 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27854,7 +29290,7 @@
 	module.exports = ReactTransitionEvents;
 
 /***/ },
-/* 239 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27871,28 +29307,13 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _data = __webpack_require__(230);
+	var _data = __webpack_require__(241);
 
 	var _data2 = _interopRequireDefault(_data);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-	// const dataMap = prodItems[proditem].reduce(function (prodcatMap, item) {
-	//     prodcatMap[item.baige] = item;
-	//     return prodcatMap
-	//   }, {});
-	// exports.lookupCategory = function (prodcat) {
-	//   return dataMap[prodcat]
-	// };
-	// function lookupItem(category, item) {
-	//   return dataMap[category].prodcatMap[item]
-	// };
-
-	// const proditem = prodItems.reduce(function (prev, curr) {
-	//   return [...prev, ...curr.proditem];
-	// }, {});
 
 	var ProductItems = _react2.default.createClass({
 	  displayName: 'ProductItems',
@@ -27951,10 +29372,6 @@
 	  }
 	});
 
-	// const displayedProds = proditem.filter(function (el) {
-	//   return el.baige == baige;
-	// });
-
 	var ProductItem = _react2.default.createClass({
 	  displayName: 'ProductItem',
 
@@ -28001,7 +29418,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "productitems.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 240 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28067,7 +29484,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "item.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 241 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28082,7 +29499,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(232);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(243);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
@@ -28180,7 +29597,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "about.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 242 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28195,7 +29612,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(232);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(243);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
@@ -28295,16 +29712,16 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\ITwork\\training\\Glysse\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "contact.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 243 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(244);
+	var content = __webpack_require__(255);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(255)(content, {});
+	var update = __webpack_require__(267)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -28321,21 +29738,21 @@
 	}
 
 /***/ },
-/* 244 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(245)();
+	exports = module.exports = __webpack_require__(256)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tfont: 16px sans-serif;\r\n\toverflow: hidden;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n}\r\n\r\nimg {\r\n\twidth: 100%;\r\n\tmin-height: 100%;\r\n\tborder: 0;\r\n\toutline: none;\r\n}\r\n\r\nul, ol, h1, h2, h3 {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\np {\r\n\tfont-size: 18px;\r\n}\r\n\r\np::-moz-selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\np::selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\nnav {\r\n\tposition: fixed;\r\n\twidth: 100%;\r\n\tbackground: -webkit-linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tbackground: linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tz-index: 2;\r\n\tbox-shadow: 0 0 10px #333;\r\n}\r\n\r\nnav ul {\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n}\r\n\r\nnav li a {\r\n\tdisplay: block;\r\n\tpadding: 20px 30px;\r\n\tcolor: aliceblue;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tbackground: #345;\r\n}\r\n\r\n.logo {\r\n\twidth: 140px;\r\n\tbackground: url(" + __webpack_require__(246) + ") no-repeat 50%;\r\n}\r\n\r\n#main {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.slider {\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 100vh;\r\n\ttext-align: center;\r\n}\r\n\r\n.slider label {\r\n\tdisplay: inline-block;\r\n\twidth: 15%;\r\n\theight: 100px;\r\n\tmargin-top: 75vh;\r\n\tcursor: pointer;\r\n\tcolor: #fff;\r\n\tfont: 600 130px impact, sans-serif;\r\n\tposition: relative;\r\n\tz-index: 1000;\r\n}\r\n\r\n.slider label:before {\r\n\tcontent:'';\r\n\twidth: 100px;\r\n\theight: 100px;\r\n\tbackground: url(" + __webpack_require__(247) + ") 40% 50%;\r\n\tposition: absolute;\r\n\tbox-shadow: 0 0 0 2px rgba(255,255,255,0.2);\r\n\tz-index:-1;\r\n}\r\n\r\n.select-img-1:checked ~ .label-img-1:before,\r\n.select-img-2:checked ~ .label-img-2:before,\r\n.select-img-3:checked ~ .label-img-3:before,\r\n.select-img-4:checked ~ .label-img-4:before {\r\n\t-webkit-transform: scale(1.2);\r\n\t        transform: scale(1.2);\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.slider input {\r\n\tdisplay: none;\r\n}\r\n\r\n.slider-bg {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\tz-index: 1;\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div {\r\n\twidth: 25%;\r\n\theight: 100%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n\toverflow: hidden;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.slider-bg div span {\r\n\tposition: absolute;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\t-webkit-transform: scale(1.5);\r\n\t        transform: scale(1.5);\r\n\topacity: 0;\r\n\tz-index: 2;\r\n\ttext-indent: -9000px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .slider-bg, .slider-bg div span:nth-child(1) {\r\n\tbackground: url(" + __webpack_require__(248) + ");\r\n}\r\n\r\n.slider .select-img-2:checked ~ .slider-bg, .slider-bg div span:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(247) + ");\r\n}\r\n\r\n.slider .select-img-3:checked ~ .slider-bg, .slider-bg div span:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(249) + ");\r\n}\r\n\r\n.slider .select-img-4:checked ~ .slider-bg, .slider-bg div span:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(250) + ");\r\n}\r\n\r\n.slider-bg div:nth-child(1) span {\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div:nth-child(2) span {\r\n\tbackground-position: -100% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(3) span {\r\n\tbackground-position: -200% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(4) span {\r\n\tbackground-position: -300% 0;\r\n}\r\n\r\n.slider input:checked ~ .slider-bg div span {\r\n\t-webkit-animation: zoommy 0.6s ease-in-out;\r\n\t        animation: zoommy 0.6s ease-in-out;\r\n}\r\n\r\n@-webkit-keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n@keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n.slider input.select-img-1:checked ~ .slider-bg div span:nth-child(1),\r\n.slider input.select-img-2:checked ~ .slider-bg div span:nth-child(2),\r\n.slider input.select-img-3:checked ~ .slider-bg div span:nth-child(3),\r\n.slider input.select-img-4:checked ~ .slider-bg div span:nth-child(4) {\r\n\t-webkit-transition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\t-webkit-animation: none;\r\n\t        animation: none;\r\n\t-webkit-transform: scale(1);\r\n\t        transform: scale(1);\r\n\topacity: 1;\r\n\tz-index: 1000;\r\n}\r\n\r\n.title h2 {\r\n\tposition: absolute;\r\n\ttop: 380px;\r\n\tleft: 350px;\r\n\tfont: 400 80px impact, sans-serif;\r\n\ttext-transform: uppercase;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tcolor: aliceblue;\r\n\ttext-shadow: 0 0 50px #000;\r\n\tz-index: 10;\r\n\topacity: 0;\r\n}\r\n\r\n.title p {\r\n\tposition: absolute;\r\n\twidth: 50%;\r\n\tpadding: 20px;\r\n\ttop: 430px;\r\n\tleft: 500px;\r\n\tfont: 400 20px sans-serif;\r\n\tcolor: aliceblue;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tz-index: 9;\r\n\topacity: 0;\r\n\tbackground: rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) h2,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) h2,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) h2,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) h2 {\r\n\topacity: 1;\r\n\tletter-spacing: 6px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) p,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) p,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) p,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) p {\r\n\topacity: 1;\r\n}\r\n\r\n\r\n.page-transition-enter {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 0;\r\n  position: absolute;\r\n}\r\n.page-transition-enter.page-transition-enter-active {\r\n  opacity: 1;\r\n}\r\n.page-transition-leave {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 1;\r\n  position: absolute;\r\n}\r\n.page-transition-leave.page-transition-leave-active {\r\n  opacity: 0;\r\n}\r\n\r\n.content {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.product, .about, .contact {\r\n\twidth: 1400px;\r\n\theight: 100vh;\r\n\tmargin: 0 auto;\r\n\tbackground: #f4f4f4;\r\n\tbox-shadow: 0 0 10px 1px #bebebe;\r\n}\r\n\r\n/*_______________Products Styles_________*/\r\n\r\n.product {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: justify;\r\n\t    -ms-flex-pack: justify;\r\n\t        justify-content: space-between;\r\n\t-webkit-box-align: start;\r\n\t    -ms-flex-align: start;\r\n\t        align-items: flex-start;\r\n}\r\n\r\n.product aside {\r\n\tdisplay: block;\r\n\twidth: 25%;\r\n\theight: 100vh;\r\n\tbackground: #333;\r\n}\r\n\r\naside a {\r\n\tdisplay: block;\r\n\tpadding: 20px 40px;\r\n\tcolor: #dbd9d9;\r\n\tborder-bottom: 1px solid #444;\r\n\tfont: 600 19px sans-serif;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tletter-spacing: 1px;\r\n}\r\n\r\naside a:hover {\r\n\tbackground: #345;\r\n\t-webkit-transition: background .3s ease-in-out;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n\r\n.product section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t-ms-flex-line-pack: start;\r\n\t    align-content: flex-start;\r\n\twidth: 75%;\r\n\tpadding: 30px 50px;\r\n\theight: inherit;\r\n}\r\n\r\n.prod-item {\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-bottom: 30px;\r\n\tpadding-top: 7%;\r\n\tbackground: url(" + __webpack_require__(249) + ") 50% 40%;\r\n\tborder: 1px solid;\r\n\tcolor: #ffffff;\r\n\ttext-decoration: none;\r\n\ttext-align: center;\r\n\tbox-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\r\n\t-webkit-transition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n\ttransition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n}\r\n\r\n.prod-item:hover {\r\n\tbox-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\r\n}\r\n\r\n.prod-item h2 {\r\n\tmargin-bottom: 30px;\r\n\tfont-size: 30px;\r\n}\r\n\r\n.prod-item p {\r\n\twidth: 60%;\r\n\tpadding: 15px 0;\r\n\tmargin-left: -5px;\r\n\tbackground: salmon;\r\n\ttext-shadow: 0 0 4px black;\r\n}\r\n\r\n.prod-advantages {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\twidth: 100%;\r\n\tmargin-top: 50px;\r\n\ttext-align: center;\r\n}\r\n\r\n.prod-advantages div {\r\n\twidth: 22%;\r\n\tpadding: 40px;\r\n\tborder-right: 1px solid #a8a8a8;\r\n}\r\n\r\n.prod-advantages div:last-child {\r\n\tborder-right: 0;\r\n}\r\n\r\n.prod-advantages p {\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.product .item {\r\n\tdisplay: block;\r\n}\r\n\r\n.item h2 {\r\n\tmargin-bottom: 10px;\r\n\tfont-size: 40px;\r\n\tfont-weight: 600;\r\n\tborder-bottom: 2px solid;\r\n}\r\n\r\n.prod-bg {\r\n\tfloat: left;\r\n\twidth: 600px;\r\n\theight: 350px;\r\n\tpadding: 10px;\r\n\tmargin: 0 50px 50px 0;\r\n\tbackground: url(" + __webpack_require__(248) + ") no-repeat 40%;\r\n}\r\n\r\n.prod-price {\r\n\tfloat: left;\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-top: 100px;\r\n\ttext-align: center;\r\n\tbackground: #e8e8e8;\r\n\tborder-radius: 15px;\r\n\tborder: 4px solid #fff;\r\n}\r\n\r\n.prod-price span {\r\n\tdisplay: block;\r\n\tmargin: 50px 50px 15px 50px;\r\n\tfont-size: 40px;\r\n\tfont-weight: 600;\r\n\tcolor: #585858;\r\n}\r\n\r\n.prod-price span:nth-child(2) {\r\n\tdisplay: block;\r\n\tmargin: 10px 0 20px 0;\r\n\tfont-size: 16px;\r\n\tfont-weight: 600;\r\n\tcolor: #585858;\r\n}\r\n\r\n.prod-price button {\r\n\twidth: 200px;\r\n\tpadding: 10px;\r\n\tbackground: #66af00;\r\n\tborder: 0;\r\n\tborder-bottom: 5px solid #5b9a03;\r\n\tborder-radius: 5px;\r\n\tcolor: white;\r\n\tfont: 30px impact, sans-serif;\r\n\toutline: none;\r\n}\r\n\r\n.prod-price button:hover {\r\n\tbackground: #5b9a03;\r\n\tborder-bottom: 5px solid #4c8003;\r\n}\r\n\r\n.prod-price button:active {\r\n\tbackground: #5b9a03;\r\n\tborder-bottom: 0;\r\n\t-webkit-transform: translateY(5px);\r\n\t        transform: translateY(5px);\r\n}\r\n\r\n.item p {\r\n\tclear: both;\r\n}\r\n\r\n/*_______________About Styles_________*/\r\n.about {\r\n\tpadding: 60px 150px;\r\n}\r\n\r\n.about section {\r\n\tmargin-bottom: 50px;\r\n}\r\n\r\n.about h2 {\r\n\twidth: 50%;\r\n\tmargin-bottom: 25px;\r\n\tborder-bottom: 1px solid;\r\n\tfont: 600 30px arial, sans-serif;\r\n}\r\n\r\n.about p {\r\n\tpadding: 20px 40px 40px 40px;\r\n\tmargin: 0;\r\n}\r\n\r\n.about a, .contact a {\r\n\tcolor: #66afe9;\r\n\ttext-decoration: none;\r\n\t-webkit-transition: all 0.1s linear;\r\n\ttransition: all 0.1s linear;\r\n}\r\n\r\n.about a:hover, .contact a:hover {\r\n\tcolor: #ffffff;\r\n\tbackground: #aed3e7;\r\n\ttext-decoration: underline;\r\n}\r\n\r\n.about-ul {\r\n\tlist-style: circle;\r\n\tfont-size: 18px;\r\n\tcolor: #444444;\r\n}\r\n\r\n.about-ul ul {\r\n\tmargin-left: 40px;\r\n\tlist-style: circle;\r\n}\r\n\r\n.about-ul li {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n/*________________Contact Styles_________*/\r\n.contact section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t/*flex-direction: column;*/\r\n}\r\n\r\n.adress, .socials {\r\n\twidth: 50%;\r\n\tpadding: 30px 0 50px 150px;\r\n}\r\n\r\n.adress span {\r\n\tdisplay: block;\r\n\tpadding-top: 20px;\r\n}\r\n\r\n.socials span {\r\n\tdisplay: block;\r\n\tpadding: 20px 20px 10px 0;\r\n\tfont-size: 28px;\r\n\tfont-weight: 600;\r\n}\r\n\r\n.socials a {\r\n\tdisplay: inline-block;\r\n\twidth: 32px;\r\n\theight: 32px;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.socials a:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(251) + ");\r\n}\r\n\r\n.socials a:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(252) + ");\r\n}\r\n\r\n.socials a:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(253) + ");\r\n}\r\n\r\n.socials a:nth-child(5) {\r\n\tbackground: url(" + __webpack_require__(254) + ");\r\n}\r\n\r\n.map {\r\n\tborder: 10px solid #fff;\r\n\tborder-radius: 5px;\r\n}\r\n\r\n.map .gmnoprint,.map .gmnoscreen {\r\n\tdisplay: none;\r\n}\r\n\r\n.contact form {\r\n\twidth: 35%;\r\n\tpadding: 20px;\r\n\tborder: 1px solid #a8a8a8;\r\n\tborder-radius: 5px;\r\n\ttext-align: center;\r\n\tbackground: -webkit-radial-gradient(center ellipse, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbackground: radial-gradient(ellipse at center, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbox-shadow: 0 0 10px -2px #333333;\r\n}\r\n\r\n.contact input,.contact textarea {\r\n\twidth: 100%;\r\n\tpadding: 8px;\r\n\tmargin-bottom: 10px;\r\n\tborder: 1px solid #d8d8d8;\r\n\tbox-sizing: border-box;\r\n\tfont: 16px sans-serif;\r\n}\r\n\r\n.contact textarea {\r\n\theight: 200px;\r\n\tresize: none;\r\n}\r\n\r\n.contact input:focus, .contact textarea:focus {\r\n\tborder-color: #66afe9;\r\n\toutline: 0;\r\n\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n\r\n.contactButton {\r\n\twidth: 90px;\r\n\theight: 90px;\r\n\tbackground: #6384A9;\r\n\tborder: 1px solid #fff;\r\n\tborder-radius: 50%;\r\n\tbox-shadow: inset 0 8px 10px 0 rgba(255, 255, 255, 0.25);\r\n\tfont-size: 20px;\r\n\tfont-weight: 600;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\t-webkit-transition: all 0.3s linear;\r\n\ttransition: all 0.3s linear;\r\n}\r\n\r\n.contactButton:hover {\r\n\tbackground: #3daa6b;\r\n}\r\n\r\n.active {\r\n\tbackground: #537392;\r\n}\r\n\r\n.example-enter {\r\n\topacity: 0.01;\r\n}\r\n\r\n.example-enter.example-enter-active {\r\n\topacity: 1;\r\n\t-webkit-transition: opacity 500ms ease-in;\r\n\ttransition: opacity 500ms ease-in;\r\n}\r\n\r\n.example-leave {\r\n\topacity: 1;\r\n}\r\n\r\n.example-leave.example-leave-active {\r\n\topacity: 0.01;\r\n\t-webkit-transition: opacity 300ms ease-in;\r\n\ttransition: opacity 300ms ease-in;\r\n}\r\n\r\n.example-appear {\r\n\topacity: 0.01;\r\n\t-webkit-transform: translateY(-10px);\r\n\t        transform: translateY(-10px);\r\n}\r\n\r\n.example-appear.example-appear-active {\r\n\topacity: 1;\r\n\t-webkit-transform: translateY(0);\r\n\t        transform: translateY(0);\r\n\t-webkit-transition: all .5s ease-in;\r\n\ttransition: all .5s ease-in;\r\n}", ""]);
+	exports.push([module.id, "body {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tfont: 16px sans-serif;\r\n\toverflow: hidden;\r\n}\r\n\r\n* {\r\n\tbox-sizing: border-box;\r\n}\r\n\r\nimg {\r\n\twidth: 100%;\r\n\tmin-height: 100%;\r\n\tborder: 0;\r\n\toutline: none;\r\n}\r\n\r\nul, ol, h1, h2, h3 {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\np {\r\n\tfont-size: 18px;\r\n}\r\n\r\np::-moz-selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\np::selection {\r\n\tbackground: #333333;\r\n\tcolor: #ffffff;\r\n}\r\n\r\nnav {\r\n\tposition: fixed;\r\n\twidth: 100%;\r\n\tbackground: -webkit-linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tbackground: linear-gradient(bottom, #000 10%, #333333 100%);\r\n\tz-index: 2;\r\n\tbox-shadow: 0 0 10px #333;\r\n}\r\n\r\nnav ul {\r\n\tposition: relative;\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n}\r\n\r\nnav li a {\r\n\tdisplay: block;\r\n\tpadding: 20px 30px;\r\n\tcolor: aliceblue;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tbackground: #345;\r\n}\r\n\r\n.logo {\r\n\twidth: 140px;\r\n\tbackground: url(" + __webpack_require__(257) + ") no-repeat 50%;\r\n}\r\n\r\n.modal {\r\n\tposition: relative;\r\n\twidth: 500px;\r\n\tmargin: 20% auto;\r\n\tpadding: 30px;\r\n\ttext-align: center;\r\n\tbackground-color: white;\r\n\toutline: none;\r\n\t/*transition: all .5s ease-in;*/\r\n}\r\n\r\n.modal h2 {\r\n\tmargin-bottom: 10px;\r\n\tfont: 36px impact, sans-serif;\r\n}\r\n\r\n.modal input {\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\theight: 40px;\r\n\tmargin-bottom: 30px;\r\n\tpadding-left: 10px;\r\n\tborder: 0;\r\n\tborder-bottom: 2px solid #3daa6b;\r\n\toutline: none;\r\n\tfont-size: 20px;\r\n\t-webkit-transition: all .3s ease;\r\n\ttransition: all .3s ease;\r\n}\r\n\r\n.modal input:focus {\r\n\tbackground: #75e6a5;\r\n}\r\n\r\n.modal button {\r\n\twidth: 110px;\r\n\tmargin-right: 50px;\r\n\tpadding: 10px;\r\n\tborder: 0;\r\n\tborder-left: 4px solid #333333;\r\n\tcolor: white;\r\n\tbackground: #3daa6b;\r\n}\r\n\r\n.modal .btn-close {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\twidth: 40px;\r\n\theight: 40px;\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tbackground: red;\r\n}\r\n\r\n.modal .btn-close::after, .modal .btn-close::before {\r\n\tcontent: '';\r\n\tposition: absolute;\r\n\ttop: 18px;\r\n\tright: 4px;\r\n\twidth: 30px;\r\n\theight: 2px;\r\n\t-webkit-transform: rotate(45deg);\r\n\t        transform: rotate(45deg);\r\n\tbackground: black;\r\n}\r\n\r\n.modal .btn-close::before {\r\n\t-webkit-transform: rotate(-45deg);\r\n\t        transform: rotate(-45deg);\r\n}\r\n\r\n.overlay {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\tbackground: rgba(0, 0, 0, 0.8);;\r\n\tz-index: 100;\r\n\t-webkit-transition: all .3s ease;\r\n\ttransition: all .3s ease;\r\n}\r\n\r\n.btn-login {\r\n\tposition: absolute;\r\n\ttop: 20px;\r\n\tright: 17%;\r\n\tbackground: transparent;\r\n\tcolor: white;\r\n\tborder: 0;\r\n\tcursor: pointer;\r\n\tfont-size: 16px;\r\n\tfont-weight: 600;\r\n}\r\n\r\n.btn-login::after {\r\n\tcontent: url(" + __webpack_require__(258) + ");\r\n\tposition: absolute;\r\n\ttop: 2px;\r\n\tright: -35px;\r\n}\r\n\r\n#main {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.slider {\r\n\tposition: relative;\r\n\twidth: 100%;\r\n\theight: 100vh;\r\n\ttext-align: center;\r\n}\r\n\r\n.slider label {\r\n\tdisplay: inline-block;\r\n\twidth: 15%;\r\n\theight: 100px;\r\n\tmargin-top: 75vh;\r\n\tcursor: pointer;\r\n\tcolor: #fff;\r\n\tfont: 600 130px impact, sans-serif;\r\n\tposition: relative;\r\n\tz-index: 1000;\r\n}\r\n\r\n.slider label:before {\r\n\tcontent:'';\r\n\twidth: 100px;\r\n\theight: 100px;\r\n\tbackground: url(" + __webpack_require__(259) + ") 40% 50%;\r\n\tposition: absolute;\r\n\tbox-shadow: 0 0 0 2px rgba(255,255,255,0.2);\r\n\tz-index:-1;\r\n}\r\n\r\n.select-img-1:checked ~ .label-img-1:before,\r\n.select-img-2:checked ~ .label-img-2:before,\r\n.select-img-3:checked ~ .label-img-3:before,\r\n.select-img-4:checked ~ .label-img-4:before {\r\n\t-webkit-transform: scale(1.2);\r\n\t        transform: scale(1.2);\r\n\tborder-radius: 50%;\r\n}\r\n\r\n.slider input {\r\n\tdisplay: none;\r\n}\r\n\r\n.slider-bg {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\tz-index: 1;\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div {\r\n\twidth: 25%;\r\n\theight: 100%;\r\n\tposition: relative;\r\n\tfloat: left;\r\n\toverflow: hidden;\r\n\tbackground-repeat: no-repeat;\r\n}\r\n\r\n.slider-bg div span {\r\n\tposition: absolute;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\t-webkit-transform: scale(1.5);\r\n\t        transform: scale(1.5);\r\n\topacity: 0;\r\n\tz-index: 2;\r\n\ttext-indent: -9000px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .slider-bg, .slider-bg div span:nth-child(1) {\r\n\tbackground: url(" + __webpack_require__(260) + ");\r\n}\r\n\r\n.slider .select-img-2:checked ~ .slider-bg, .slider-bg div span:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(259) + ");\r\n}\r\n\r\n.slider .select-img-3:checked ~ .slider-bg, .slider-bg div span:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(261) + ");\r\n}\r\n\r\n.slider .select-img-4:checked ~ .slider-bg, .slider-bg div span:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(262) + ");\r\n}\r\n\r\n.slider-bg div:nth-child(1) span {\r\n\tbackground-position: 0 0;\r\n}\r\n\r\n.slider-bg div:nth-child(2) span {\r\n\tbackground-position: -100% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(3) span {\r\n\tbackground-position: -200% 0;\r\n}\r\n\r\n.slider-bg div:nth-child(4) span {\r\n\tbackground-position: -300% 0;\r\n}\r\n\r\n.slider input:checked ~ .slider-bg div span {\r\n\t-webkit-animation: zoommy 0.6s ease-in-out;\r\n\t        animation: zoommy 0.6s ease-in-out;\r\n}\r\n\r\n@-webkit-keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n@keyframes zoommy {\r\n\t0%{\r\n\t\t-webkit-transform: scale(1);\r\n\t\t        transform: scale(1);\r\n\t\topacity: 1;\r\n\t}\r\n\t100%{\r\n\t\t-webkit-transform: scale(1.5);\r\n\t\t        transform: scale(1.5);\r\n\t\topacity: 0;\r\n\t}\r\n}\r\n\r\n.slider input.select-img-1:checked ~ .slider-bg div span:nth-child(1),\r\n.slider input.select-img-2:checked ~ .slider-bg div span:nth-child(2),\r\n.slider input.select-img-3:checked ~ .slider-bg div span:nth-child(3),\r\n.slider input.select-img-4:checked ~ .slider-bg div span:nth-child(4) {\r\n\t-webkit-transition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s;\r\n\ttransition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0s linear 0.6s, -webkit-transform 0.5s ease-in-out;\r\n\t-webkit-animation: none;\r\n\t        animation: none;\r\n\t-webkit-transform: scale(1);\r\n\t        transform: scale(1);\r\n\topacity: 1;\r\n\tz-index: 1000;\r\n}\r\n\r\n.title h2 {\r\n\tposition: absolute;\r\n\ttop: 380px;\r\n\tleft: 350px;\r\n\tfont: 400 80px impact, sans-serif;\r\n\ttext-transform: uppercase;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tcolor: aliceblue;\r\n\ttext-shadow: 0 0 50px #000;\r\n\tz-index: 10;\r\n\topacity: 0;\r\n}\r\n\r\n.title p {\r\n\tposition: absolute;\r\n\twidth: 50%;\r\n\tpadding: 20px;\r\n\ttop: 430px;\r\n\tleft: 500px;\r\n\tfont: 400 20px sans-serif;\r\n\tcolor: aliceblue;\r\n\t-webkit-transition-duration: 1s;\r\n\t        transition-duration: 1s;\r\n\tz-index: 9;\r\n\topacity: 0;\r\n\tbackground: rgba(51, 51, 51, 0.5);\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) h2,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) h2,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) h2,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) h2 {\r\n\topacity: 1;\r\n\tletter-spacing: 6px;\r\n}\r\n\r\n.slider .select-img-1:checked ~ .title div:nth-child(1) p,\r\n.slider .select-img-2:checked ~ .title div:nth-child(2) p,\r\n.slider .select-img-3:checked ~ .title div:nth-child(3) p,\r\n.slider .select-img-4:checked ~ .title div:nth-child(4) p {\r\n\topacity: 1;\r\n}\r\n\r\n\r\n.page-transition-enter {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 0;\r\n  position: absolute;\r\n}\r\n.page-transition-enter.page-transition-enter-active {\r\n  opacity: 1;\r\n}\r\n.page-transition-leave {\r\n  -webkit-transition: opacity 0.3s ease-in-out;\r\n  transition: opacity 0.3s ease-in-out;\r\n  opacity: 1;\r\n  position: absolute;\r\n}\r\n.page-transition-leave.page-transition-leave-active {\r\n  opacity: 0;\r\n}\r\n\r\n.content {\r\n\tpadding-top: 58px;\r\n}\r\n\r\n.product, .about, .contact {\r\n\twidth: 1400px;\r\n\theight: 100vh;\r\n\tmargin: 0 auto;\r\n\tbackground: #f4f4f4;\r\n\tbox-shadow: 0 0 10px 1px #bebebe;\r\n}\r\n\r\n/*_______________Products Styles_________*/\r\n\r\n.product {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-webkit-box-pack: justify;\r\n\t    -ms-flex-pack: justify;\r\n\t        justify-content: space-between;\r\n\t-webkit-box-align: start;\r\n\t    -ms-flex-align: start;\r\n\t        align-items: flex-start;\r\n}\r\n\r\n.product aside {\r\n\tdisplay: block;\r\n\twidth: 25%;\r\n\theight: 100vh;\r\n\tbackground: #333;\r\n}\r\n\r\naside a {\r\n\tdisplay: block;\r\n\tpadding: 20px 40px;\r\n\tcolor: #dbd9d9;\r\n\tborder-bottom: 1px solid #444;\r\n\tfont: 600 19px sans-serif;\r\n\ttext-transform: uppercase;\r\n\ttext-decoration: none;\r\n\tletter-spacing: 1px;\r\n}\r\n\r\naside a:hover {\r\n\tbackground: #345;\r\n\t-webkit-transition: background .3s ease-in-out;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n\r\n.product section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t-ms-flex-line-pack: start;\r\n\t    align-content: flex-start;\r\n\twidth: 75%;\r\n\tpadding: 30px 50px;\r\n\theight: inherit;\r\n}\r\n\r\n.prod-item {\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-bottom: 30px;\r\n\tpadding-top: 7%;\r\n\tbackground: url(" + __webpack_require__(261) + ") 50% 40%;\r\n\tborder: 1px solid;\r\n\tcolor: #ffffff;\r\n\ttext-decoration: none;\r\n\ttext-align: center;\r\n\tbox-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);\r\n\t-webkit-transition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n\ttransition: 0.3s all cubic-bezier(0, 0.5, 0.5, 2);\r\n}\r\n\r\n.prod-item:hover {\r\n\tbox-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\r\n}\r\n\r\n.prod-item h2 {\r\n\tmargin-bottom: 30px;\r\n\tfont-size: 30px;\r\n}\r\n\r\n.prod-item p {\r\n\twidth: 60%;\r\n\tpadding: 15px 0;\r\n\tmargin-left: -5px;\r\n\tbackground: salmon;\r\n\ttext-shadow: 0 0 4px black;\r\n}\r\n\r\n.prod-advantages {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-webkit-box-pack: center;\r\n\t    -ms-flex-pack: center;\r\n\t        justify-content: center;\r\n\twidth: 100%;\r\n\tmargin-top: 50px;\r\n\ttext-align: center;\r\n}\r\n\r\n.prod-advantages div {\r\n\twidth: 22%;\r\n\tpadding: 40px;\r\n\tborder-right: 1px solid #a8a8a8;\r\n}\r\n\r\n.prod-advantages div:last-child {\r\n\tborder-right: 0;\r\n}\r\n\r\n.prod-advantages p {\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.product .item {\r\n\tdisplay: block;\r\n}\r\n\r\n.item h2 {\r\n\tmargin-bottom: 10px;\r\n\tfont-size: 40px;\r\n\tfont-weight: 600;\r\n\tborder-bottom: 2px solid;\r\n}\r\n\r\n.prod-bg {\r\n\tfloat: left;\r\n\twidth: 600px;\r\n\theight: 350px;\r\n\tpadding: 10px;\r\n\tmargin: 0 50px 50px 0;\r\n\tbackground: url(" + __webpack_require__(260) + ") no-repeat 40%;\r\n}\r\n\r\n.prod-price {\r\n\tfloat: left;\r\n\twidth: 300px;\r\n\theight: 200px;\r\n\tmargin-top: 100px;\r\n\ttext-align: center;\r\n\tbackground: #e8e8e8;\r\n\tborder-radius: 15px;\r\n\tborder: 4px solid #fff;\r\n}\r\n\r\n.prod-price span {\r\n\tdisplay: block;\r\n\tmargin: 50px 50px 15px 50px;\r\n\tfont-size: 40px;\r\n\tfont-weight: 600;\r\n\tcolor: #585858;\r\n}\r\n\r\n.prod-price span:nth-child(2) {\r\n\tdisplay: block;\r\n\tmargin: 10px 0 20px 0;\r\n\tfont-size: 16px;\r\n\tfont-weight: 600;\r\n\tcolor: #585858;\r\n}\r\n\r\n.prod-price button {\r\n\twidth: 200px;\r\n\tpadding: 10px;\r\n\tbackground: #66af00;\r\n\tborder: 0;\r\n\tborder-bottom: 5px solid #5b9a03;\r\n\tborder-radius: 5px;\r\n\tcolor: white;\r\n\tfont: 30px impact, sans-serif;\r\n\toutline: none;\r\n}\r\n\r\n.prod-price button:hover {\r\n\tbackground: #5b9a03;\r\n\tborder-bottom: 5px solid #4c8003;\r\n}\r\n\r\n.prod-price button:active {\r\n\tbackground: #5b9a03;\r\n\tborder-bottom: 0;\r\n\t-webkit-transform: translateY(5px);\r\n\t        transform: translateY(5px);\r\n}\r\n\r\n.item p {\r\n\tclear: both;\r\n}\r\n\r\n/*_______________About Styles_________*/\r\n.about {\r\n\tpadding: 60px 150px;\r\n}\r\n\r\n.about section {\r\n\tmargin-bottom: 50px;\r\n}\r\n\r\n.about h2 {\r\n\twidth: 50%;\r\n\tmargin-bottom: 25px;\r\n\tborder-bottom: 1px solid;\r\n\tfont: 600 30px arial, sans-serif;\r\n}\r\n\r\n.about p {\r\n\tpadding: 20px 40px 40px 40px;\r\n\tmargin: 0;\r\n}\r\n\r\n.about a, .contact a {\r\n\tcolor: #66afe9;\r\n\ttext-decoration: none;\r\n\t-webkit-transition: all 0.1s linear;\r\n\ttransition: all 0.1s linear;\r\n}\r\n\r\n.about a:hover, .contact a:hover {\r\n\tcolor: #ffffff;\r\n\tbackground: #aed3e7;\r\n\ttext-decoration: underline;\r\n}\r\n\r\n.about-ul {\r\n\tlist-style: circle;\r\n\tfont-size: 18px;\r\n\tcolor: #444444;\r\n}\r\n\r\n.about-ul ul {\r\n\tmargin-left: 40px;\r\n\tlist-style: circle;\r\n}\r\n\r\n.about-ul li {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n/*________________Contact Styles_________*/\r\n.contact section {\r\n\tdisplay: -webkit-box;\r\n\tdisplay: -ms-flexbox;\r\n\tdisplay: flex;\r\n\t-ms-flex-wrap: wrap;\r\n\t    flex-wrap: wrap;\r\n\t-ms-flex-pack: distribute;\r\n\t    justify-content: space-around;\r\n\t/*flex-direction: column;*/\r\n}\r\n\r\n.adress, .socials {\r\n\twidth: 50%;\r\n\tpadding: 30px 0 50px 150px;\r\n}\r\n\r\n.adress span {\r\n\tdisplay: block;\r\n\tpadding-top: 20px;\r\n}\r\n\r\n.socials span {\r\n\tdisplay: block;\r\n\tpadding: 20px 20px 10px 0;\r\n\tfont-size: 28px;\r\n\tfont-weight: 600;\r\n}\r\n\r\n.socials a {\r\n\tdisplay: inline-block;\r\n\twidth: 32px;\r\n\theight: 32px;\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.socials a:nth-child(2) {\r\n\tbackground: url(" + __webpack_require__(263) + ");\r\n}\r\n\r\n.socials a:nth-child(3) {\r\n\tbackground: url(" + __webpack_require__(264) + ");\r\n}\r\n\r\n.socials a:nth-child(4) {\r\n\tbackground: url(" + __webpack_require__(265) + ");\r\n}\r\n\r\n.socials a:nth-child(5) {\r\n\tbackground: url(" + __webpack_require__(266) + ");\r\n}\r\n\r\n.map {\r\n\tborder: 10px solid #fff;\r\n\tborder-radius: 5px;\r\n}\r\n\r\n.map .gmnoprint,.map .gmnoscreen {\r\n\tdisplay: none;\r\n}\r\n\r\n.contact form {\r\n\twidth: 35%;\r\n\tpadding: 20px;\r\n\tborder: 1px solid #a8a8a8;\r\n\tborder-radius: 5px;\r\n\ttext-align: center;\r\n\tbackground: -webkit-radial-gradient(center ellipse, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbackground: radial-gradient(ellipse at center, #d9e9f1 10%, rgba(38, 81, 97, 0.5) 100%);\r\n\tbox-shadow: 0 0 10px -2px #333333;\r\n}\r\n\r\n.contact input,.contact textarea {\r\n\twidth: 100%;\r\n\tpadding: 8px;\r\n\tmargin-bottom: 10px;\r\n\tborder: 1px solid #d8d8d8;\r\n\tbox-sizing: border-box;\r\n\tfont: 16px sans-serif;\r\n}\r\n\r\n.contact textarea {\r\n\theight: 200px;\r\n\tresize: none;\r\n}\r\n\r\n.contact input:focus, .contact textarea:focus {\r\n\tborder-color: #66afe9;\r\n\toutline: 0;\r\n\tbox-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n\r\n.contactButton {\r\n\twidth: 90px;\r\n\theight: 90px;\r\n\tbackground: #6384A9;\r\n\tborder: 1px solid #fff;\r\n\tborder-radius: 50%;\r\n\tbox-shadow: inset 0 8px 10px 0 rgba(255, 255, 255, 0.25);\r\n\tfont-size: 20px;\r\n\tfont-weight: 600;\r\n\tcolor: #fff;\r\n\tcursor: pointer;\r\n\t-webkit-transition: all 0.3s linear;\r\n\ttransition: all 0.3s linear;\r\n}\r\n\r\n.contactButton:hover {\r\n\tbackground: #3daa6b;\r\n}\r\n\r\n.active {\r\n\tbackground: #537392;\r\n}\r\n\r\n.example-enter {\r\n\topacity: 0.01;\r\n}\r\n\r\n.example-enter.example-enter-active {\r\n\topacity: 1;\r\n\t-webkit-transition: opacity 500ms ease-in;\r\n\ttransition: opacity 500ms ease-in;\r\n}\r\n\r\n.example-leave {\r\n\topacity: 1;\r\n}\r\n\r\n.example-leave.example-leave-active {\r\n\topacity: 0.01;\r\n\t-webkit-transition: opacity 300ms ease-in;\r\n\ttransition: opacity 300ms ease-in;\r\n}\r\n\r\n.example-appear {\r\n\topacity: 0.01;\r\n\t-webkit-transform: translateY(-10px);\r\n\t        transform: translateY(-10px);\r\n}\r\n\r\n.example-appear.example-appear-active {\r\n\topacity: 1;\r\n\t-webkit-transform: translateY(0);\r\n\t        transform: translateY(0);\r\n\t-webkit-transition: all .5s ease-in;\r\n\ttransition: all .5s ease-in;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 245 */
+/* 256 */
 /***/ function(module, exports) {
 
 	/*
@@ -28391,61 +29808,67 @@
 
 
 /***/ },
-/* 246 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "ea4049bc29f2474a57577f79ea5f7056.jpg";
 
 /***/ },
-/* 247 */
+/* 258 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ce4e203012aab6ccb1df9f6c49aa15f3.png";
+
+/***/ },
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f89799669d29abf906323c8ffb8245c0.jpg";
 
 /***/ },
-/* 248 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "520bcf76d193821a45dea62499278686.jpg";
 
 /***/ },
-/* 249 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "d5e17938e5dcf31467cae1bcb8d31570.jpg";
 
 /***/ },
-/* 250 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "22e3422bf77e87875ed33d9ef7e0f4c1.jpg";
 
 /***/ },
-/* 251 */
+/* 263 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADM0lEQVRYhe2Xz2scZRjHP887s7O72ayNXWtsbAgIgRYRLBXSFsGDgl7aW6+Kgh5E8Fb14B8gIm0RSmt7V6sXKyLY6kmhBhT0Yosm1cb8kPxoWrKb+fk+HrKp7u7M7G5byCXPYYaZed/v832e9/k1wufLyhaK2Url2wS2CQC49xVN/5dQIvdIYBOrFxxVdhcNR3Z77Bkw3GgoX8yGLEZ2g4hVBl1hLenEk6w6sLdiqHnCDytxrjVG4eUxjxP7K1Td/9YtB5a3fm1wM1SOjXqcvx7w7WLUgZUeAwrH9nhcOFTlqR1uq2vb5NldLqfalAPUioYzByp8cmiQBd+y6FsGnE5DMggo41WHkbLh0jNVXh0r4jXft4hV3tlXpuKme8g1QmTh6IjHc8MF1pNOQ9IJCNxoWACGPMPpAxU+OzjIwQddsHqHSMEITw45qRCb4gicmw44+YePphxlehCKcHE25M3xEoOu4Brh6KMeR0Y8JldivpwLubIcM+9bpEu0z/qWs9M+NmNdOgFVlgLLB1fXeffxMqa5WQQmai4TNZdElXoMlS6JHFuIc9pd5vbj+8o8P1wgtFBK8bIjwgOFfOUAc76lYZWsfM6ohMI38xGjA4ZSSuT2I7/cjEmJvS4EBL5aiLgwE96TcoCLcxF51SyzFwQKr/1U59S1dVZCe1fKr9cTvl+Kc6tpdjOSjeB5rOpwK+p/aEpUee83n24+zO2GvlW++yditNx/05xcifl4JujaS/KRRfhwyuf1n+v81UiIbG+eWAosr0zWuZ10X9vVtESEc38GHL58m4+mArpRWA03lF+tJz110s46oOAZcABX4OGiYWKnwxvjJSZ2upmYqvD7WsJLP65xZTW/g+YTAIZc4e29ZV54pMBwSRgqyJ1qmCZ+opyd8nn/ms9sYHtWDjnzgFjliR0OL44VefqhAqMDhooLRoTYKquRMr1m+Xoh5NOZkL/XLZj+i1YmAaA5FSmeCDVPqLiCEYitcitSViNI0L4sbpe2I2ir2bJxCYH5QCFstuJNhc3vLdvaR7mWZwWVlu9tWdCLJUJLKmT5L/1gO970PhVL2z0Ls8/nLf8v2CbwL9vnKdmZSeI3AAAAAElFTkSuQmCC"
 
 /***/ },
-/* 252 */
+/* 264 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADYUlEQVRYhe2XTWxUVRiGn+/cOzMVIpIosdpOExhtMSaKtcSI1iglzLAwqGHhwsRoomJc68LEmrjThQYXgG6MP4ndiIlVU2T4CQVD/Ck2pXZKW9N0GAeGhNAWLPfvHBczaJTb4c50km54dzf33vM+55z3fOccueXpPZddsVawDIqbANsVC0fZy+EPGtTyOP+rGwBVJ98YA9oszUEJIlIHgDasu3UlPQ+0kIhZdXm7vubwbwUmz18CFQ4RCmCMIXXbSvp706xvWV2X+VVNnZ3jyXf2kyvNh45E+AhoQ8+G1prNF1yfH8fOERhI2IqNd68h1byKTFcbuW9PgRUVAIjHas/nkZEi23u/h4SNHWj2vZ0h05kkEVMYIGwSGlqBrngBnhKUpdCm/AxQLcYNBRAAx0eLoHyNhPa5AQCur/nh1zzZoTxGwxOdLWzb2MaWDS18/uZWfG1YEbPouf/OxgN4vuatT06wq38UtxKqvQNj7Mys571XNvHc43fV1N51kzZdmueDfcOMFy4CsP9knl39o3gJG7EtxLbwm2z2DOT45sQ0AFPn5nj/q2Emi7NLB8gVZnl973FKcw4A2V/yuCFFxbcVAz/NAHBh3uWNj44zMn1h6QBKBIlbxCrDbapEWldeWkqQmIVapPrVBFCWMJYvT8HmzlZiIfuD5Qeku9oAmPjzIjpawxEBYoovDp5mwfXZ1pXk1fQ9WI6H8TXG11iOz4ub23lq01ocL+Cz7GkkHm3/iLQKRIRj4yX6Bv/ghZ523n35YR697w4Gfp5Ba0h3Jdn+yFqaYhZ9g1McOlUkvO7VCQDgCby2exABnu1ex47uFDu6U/+8d7yAvqOTvPThURyiHzQiA4gIVxB27j7Gl0cmeH5LBx3J1QjCRGGWT7PjHB4t4lS+rV6AawCIWwpbG7TRCOADB0eKZE+eQVU8NCAxC0QqPTdYgSZuXz8HiwJ4fjnHD7Wv4eveDAueH3FWK+C2xWP3NgPl0r3Yv+EASjg0XGDq7Byp5lWkO1trsP6vZs5f4sBQftETkdz0zMeXHWVfezHRho7bb2brg0maIi6p/8v1Ag4MneH34iyoa2OZ0H6VDCghV5on991oxDiFS5QgIeZXVTWEIgJWlF29fi37veAGgB03wV+Rt64GK24C/gZkny/Ojhh/mAAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 253 */
+/* 265 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEWklEQVRYhcWXW4hVVRjHf2utPXPOnNvMOE4NNFGNJGEZFiQZkXabUioSyyiCAulCL10RInoxRKGHsJdIeqmn8CXIhOg2WExljjqhTqIjaelMNtM46sy57b3X6mGf4+yzbzMjgn/Yh7PX933ru67vW1ucev5BwxWEvJLKASz/iz8UIvBOgBbkn6uc8cmDLwJBoSBjkFbnD/LEGRVHk0Em/4ZzKY4kniQH6rCCi5ejIuuhDkYxyiArYi0MY2aekDYx8/ihXRAS41sP1liiAReLyXWQ2TypJbch862B5Av05ASlwV9D0i3LV1He/zNoNzGqsQYYAGPIr3mK1K3LKf22G7Wgk9x9jyJzBarH/6B04BdKAz8RCrYUFNY+R+XQAKZcSlCflALXJf/IM+R6H2ds8+s4/54GY6gc3kfHq5uwurqpDB1AT11ACBHwUmCMbjgtcYhtRKqzi9zqJ6ieOIozNoqQCqEsKkODTPftQmbz5HrXgmNjjEFYFjLdgky3INItCCGRqZaZNaUiaygmAgZr4dXIlkxNyGDqIVaK0v5+8mvWY3V1exSjya5cQ+ae1TX/BVZnFwvf3AK1SEx//yXTfTtBNaqMMUCgpy9gXJem7h5kJocuFWukGs0YnH9OIxAgFVN9X1H88WuvGqSi890PGXt/I6Zc8gradUCquafAGT2FfXIY1XEVmbseAMfxCNql+bpFmGqZqW+/AKvmg9Zou4qpPxio/dd2FaN1+KgS6IQNXdB1OLt9K87ISVrXv0D2/sdQhXaaFy0h17uOiY82Ux0eitwUjBcZ396N8Z1B7DBCCJzxM4xteYP0LXfQ1LOYjlXvYXVdy+Sn2ygP7gEZHUBjDMX+bzCOHd6XxkMroxb9RujiNMU9fZzf8QlCWYjmFDKbr3XGSP1gDBd2fY6x7RiGGTSkIHI/rb1upl0qw4cRUlJ4cgOZu3vB6IuyIduliklPTApCyrVGFdrJrFxNc89N6KnzmEqZ8sG9NC9eSvuGt2i65nrO7diOiajuqL7vH3jJs0Brmhctof3FjVSPHWbys224E+Ne2IUgdfPtLHjpbXIPr6O0dzfVE8divY10zofIKpLZPB2vbUIXpzj78Vbcc2dBKe/IKUVl6ADjH7yDqVZJL1vhpekSETZAu6SXrUAV2qgePRTtmZQ4I3/jTo4jmpoaSLPN/9kNMBd/SC1e6nke6uEG2dqOzBSoHPm9wUjTwHUpBkhJaV8/9l/HabrhRlqffhmRSntHyrbBsZGZHG3PvkLlyCDlgwOx/WAuEPXvAv89wxgQqRS5h9aRufNeUBbOqT8xlTKy0I7MZJnu/47iDzu9ljtfpUkGNMB1Eek0qm0hstDmNaap87j/ncGUy95wCSQ66QYcxZd8J1QKY9s4Y6MwNtIoqlSkwvnGY/Y7YcNKGJdyi478MAlNwwShy4nYL6PZMF+D4pyzohj8eU1qLFEDLOr7L+lyGqqB+XayyEk4B546/gdYh7SrP6iz2QAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 254 */
+/* 266 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVRYhe2XS4vTUBTHfydJH6lTO4yOlIHRjeBCERxwp650oW5UEBFBEMSlCC78BF34BQT9AuMHEN3O2oWC4AtEF0rVUqmdvpKY5LhITWtRSDJTy8ic3U24Ob/zv/c8IseuPFBmaMYsnW8DbAMAWBvZHIQhc3ae6u4ytm0RhkqrPeBLs4uITBdAVblw8iCXTh9icWEHphmJ+exVndt3nyT+TiaAIAi5eu4INy4exTB+j1QQVCGhANkASnaey2cPx85VlU7PJVToDbxU30oNoKosVytU5orx+t7qUx4+foEgIJo4+kwAAPncKHmCUHnzvoEqIApK4guYGkA1ahuTzSNyqAxfTwdAVakulimX8ixXKyPnwNKenXR60dm73g8+fm4nvoWJAYJQuXZ+hTMnDjCugWka3Ll+fIgCz1/XuVl7RFIN0t2BOL0mUm8sWsfzUdXpFCLPD+j2PQxDKBVzEZMqjusThJEqna4b34UkJkkHElVloWJjF3Ps37uL2q1TQFSUavfXePmuAYDj+nz73t98BUSE1rpDqz1gvlwcgQHNVp/61058MmmyIHU3/JtcWee6mbfjrQlgmKNtAhjDSvjPAAqWOVoImFaK7rMZAJO2kR+LTADjWSbI8AiyWeJCFJsqhYLFvqX5OPRPjXV6fS9V/v+y9POACI7r8/ZDc+JxNhUyDSRZnf3JtmYd+K8AfgL5Xa3HUywSZAAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 255 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
